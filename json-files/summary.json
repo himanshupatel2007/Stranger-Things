@@ -1,0 +1,140 @@
+{
+  "backstory": {
+    "title": "Project MKUltra: Where the Shadow Began",
+    "details": [
+      {
+        "label": "The Lab",
+        "description": "Dr. Brenner leads secret experiments at Hawkins National Laboratory."
+      },
+      {
+        "label": "The Subjects",
+        "description": "Children with psychic abilities are groomed as government weapons."
+      },
+      {
+        "label": "The Rift",
+        "description": "Eleven accidentally tears a hole in reality, creating the first gate."
+      },
+      {
+        "label": "The Threat",
+        "description": "Subject 001 is banished to a dark dimension, becoming Vecna."
+      }
+    ]
+  },
+  "seasons": [
+    {
+      "season": 1,
+      "year": 1983,
+      "title": "The Vanishing of Will Byers",
+      "summary": [
+        {
+          "label": "The Disappearance",
+          "description": "Will Byers vanishes into the Upside Down on a cold November night."
+        },
+        {
+          "label": "The Discovery",
+          "description": "A mysterious girl named Eleven is found hiding in the local woods."
+        },
+        {
+          "label": "The Hunt",
+          "description": "Joyce Byers communicates with her son using Christmas lights."
+        },
+        {
+          "label": "The Monster",
+          "description": "A faceless Demogorgon begins hunting the residents of Hawkins."
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "year": 1984,
+      "title": "The Shadow Grows: The Mind Flayer's Arrival",
+      "summary": [
+        {
+          "label": "True Sight",
+          "description": "Will suffers from terrifying visions of a massive shadow in the sky."
+        },
+        {
+          "label": "The Infection",
+          "description": "A network of rotting vines begins spreading beneath the town."
+        },
+        {
+          "label": "The New Ally",
+          "description": "Max Mayfield joins the group as they battle \"Demodogs.\""
+        },
+        {
+          "label": "The Close",
+          "description": "Eleven returns from hiding to shut the Mothergate with her full power."
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "year": 1985,
+      "title": "Terror Under the Neon: The Battle of Starcourt",
+      "summary": [
+        {
+          "label": "Russian Secrets",
+          "description": "A hidden Soviet base is discovered beneath the Starcourt Mall."
+        },
+        {
+          "label": "The Possession",
+          "description": "The Mind Flayer builds a body by \"flaying\" the townspeople."
+        },
+        {
+          "label": "The Romance",
+          "description": "Young love blooms for the party during the heat of summer."
+        },
+        {
+          "label": "The Sacrifice",
+          "description": "A tragic showdown at the mall leaves the group heartbroken."
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "year": 1986,
+      "title": "Vecna's Curse: The Clock is Ticking",
+      "summary": [
+        {
+          "label": "The Killer",
+          "description": "Vecna targets teenagers by haunting them with their past traumas."
+        },
+        {
+          "label": "The Lab Return",
+          "description": "Eleven must dive into her memories to regain her lost powers."
+        },
+        {
+          "label": "The Hellfire Club",
+          "description": "New hero Eddie Munson leads the group into the Upside Down."
+        },
+        {
+          "label": "The Grand Design",
+          "description": "Four gates open, causing the dimension to bleed into Hawkins."
+        }
+      ]
+    },
+    {
+      "season": 5,
+      "year": 1987,
+      "title": "The World Turned Upside Down",
+      "summary": [
+        {
+          "label": "The War",
+          "description": "Hawkins is under military rule as the town becomes a wasteland."
+        },
+        {
+          "label": "The Final Stand",
+          "description": "Eleven and the survivors reunite for the ultimate battle."
+        },
+        {
+          "label": "The Abyss",
+          "description": "The group descends into the heart of the darkness to face Vecna."
+        },
+        {
+          "label": "The Legacy",
+          "description": "A final attempt to close the gates and save humanity forever."
+        }
+      ]
+    }
+  ]
+}

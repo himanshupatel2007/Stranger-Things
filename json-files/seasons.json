@@ -1,0 +1,321 @@
+[
+  {
+    "season": "Season 1",
+    "episodes": [
+      {
+        "no": 1,
+        "title": "Chapter One: The Vanishing of Will Byers",
+        "description": "On his way home from a friend's house, Will sees something terrifying.",
+        "image_url": "https://example.com/s1_e1.jpg",
+        "link": "https://www.netflix.com/watch/80077368"
+      },
+      {
+        "no": 2,
+        "title": "Chapter Two: The Weirdo on Maple Street",
+        "description": "Lucas, Mike and Dustin try to talk to the girl they found in the woods.",
+        "image_url": "https://example.com/s1_e2.jpg",
+        "link": "https://www.netflix.com/watch/80077369"
+      },
+      {
+        "no": 3,
+        "title": "Chapter Three: Holly, Jolly",
+        "description": "An increasingly concerned Nancy looks for Barb and finds out what Jonathan has been up to.",
+        "image_url": "https://example.com/s1_e3.jpg",
+        "link": "https://www.netflix.com/watch/80077370"
+      },
+      {
+        "no": 4,
+        "title": "Chapter Four: The Body",
+        "description": "Refusing to believe Will is dead, Joyce tries to connect with her son.",
+        "image_url": "https://example.com/s1_e4.jpg",
+        "link": "https://www.netflix.com/watch/80077371"
+      },
+      {
+        "no": 5,
+        "title": "Chapter Five: The Flea and the Acrobat",
+        "description": "Hopper breaks into the lab while Dustin and Lucas find the 'gate'.",
+        "image_url": "https://example.com/s1_e5.jpg",
+        "link": "https://www.netflix.com/watch/80077372"
+      },
+      {
+        "no": 6,
+        "title": "Chapter Six: The Monster",
+        "description": "Jonathan looks for Nancy in the darkness, but Steve is looking for her too.",
+        "image_url": "https://example.com/s1_e6.jpg",
+        "link": "https://www.netflix.com/watch/80077373"
+      },
+      {
+        "no": 7,
+        "title": "Chapter Seven: The Bathtub",
+        "description": "Eleven helps the boys find Will while government agents get closer.",
+        "image_url": "https://example.com/s1_e7.jpg",
+        "link": "https://www.netflix.com/watch/80077374"
+      },
+      {
+        "no": 8,
+        "title": "Chapter Eight: The Upside Down",
+        "description": "Hopper and Joyce enter the portal to save Will. A final showdown occurs at the school.",
+        "image_url": "https://example.com/s1_e8.jpg",
+        "link": "https://www.netflix.com/watch/80077375"
+      }
+    ]
+  },
+  {
+    "season": "Season 2",
+    "episodes": [
+      {
+        "no": 1,
+        "title": "Chapter One: MADMAX",
+        "description": "As the town prepares for Halloween, a high-score seeker shakes up things at the arcade.",
+        "image_url": "https://example.com/s2_e1.jpg",
+        "link": "https://www.netflix.com/watch/80117715"
+      },
+      {
+        "no": 2,
+        "title": "Chapter Two: Trick or Treat, Freak",
+        "description": "After a terrifying night, Will keeps things to himself. Dustin finds a strange new pet.",
+        "image_url": "https://example.com/s2_e2.jpg",
+        "link": "https://www.netflix.com/watch/80117716"
+      },
+      {
+        "no": 3,
+        "title": "Chapter Three: The Pollywog",
+        "description": "Dustin adopts a new friend. Eleven grows impatient in the cabin.",
+        "image_url": "https://example.com/s2_e3.jpg",
+        "link": "https://www.netflix.com/watch/80117717"
+      },
+      {
+        "no": 4,
+        "title": "Chapter Four: Will the Wise",
+        "description": "Will opens up to Joyce. Hopper digs for the truth about the rotting pumpkins.",
+        "image_url": "https://example.com/s2_e4.jpg",
+        "link": "https://www.netflix.com/watch/80117718"
+      },
+      {
+        "no": 5,
+        "title": "Chapter Five: Dig Dug",
+        "description": "Nancy and Jonathan swap conspiracy theories with a new ally. Bob solves a puzzle.",
+        "image_url": "https://example.com/s2_e5.jpg",
+        "link": "https://www.netflix.com/watch/80117719"
+      },
+      {
+        "no": 6,
+        "title": "Chapter Six: The Spy",
+        "description": "Will’s connection to the shadow monster grows stronger. Steve and Dustin bond.",
+        "image_url": "https://example.com/s2_e6.jpg",
+        "link": "https://www.netflix.com/watch/80117720"
+      },
+      {
+        "no": 7,
+        "title": "Chapter Seven: The Lost Sister",
+        "description": "Eleven’s journey of self-discovery leads her to a band of outcasts in Chicago.",
+        "image_url": "https://example.com/s2_e7.jpg",
+        "link": "https://www.netflix.com/watch/80117721"
+      },
+      {
+        "no": 8,
+        "title": "Chapter Eight: The Mind Flayer",
+        "description": "An unlikely hero steps up when the lab goes into lockdown.",
+        "image_url": "https://example.com/s2_e8.jpg",
+        "link": "https://www.netflix.com/watch/80117722"
+      },
+      {
+        "no": 9,
+        "title": "Chapter Nine: The Gate",
+        "description": "Eleven makes a plan to finish what she started. The kids head into the tunnels.",
+        "image_url": "https://example.com/s2_e9.jpg",
+        "link": "https://www.netflix.com/watch/80117723"
+      }
+    ]
+  },
+  {
+    "season": "Season 3",
+    "episodes": [
+      {
+        "no": 1,
+        "title": "Chapter One: Suzie, Do You Copy?",
+        "description": "Summer in Hawkins brings a new mall and new monsters.",
+        "image_url": "https://example.com/s3_e1.jpg",
+        "link": "https://www.netflix.com/watch/80222779"
+      },
+      {
+        "no": 2,
+        "title": "Chapter Two: The Mall Rats",
+        "description": "Nancy and Jonathan follow a lead. Eleven and Max go on a shopping spree.",
+        "image_url": "https://example.com/s3_e2.jpg",
+        "link": "https://www.netflix.com/watch/80222780"
+      },
+      {
+        "no": 3,
+        "title": "Chapter Three: The Case of the Missing Lifeguard",
+        "description": "With El and Max on the hunt for Billy, Will declares a day without girls.",
+        "image_url": "https://example.com/s3_e3.jpg",
+        "link": "https://www.netflix.com/watch/80222781"
+      },
+      {
+        "no": 4,
+        "title": "Chapter Four: The Sauna Test",
+        "description": "A code red brings the gang together to face a frighteningly familiar evil.",
+        "image_url": "https://example.com/s3_e4.jpg",
+        "link": "https://www.netflix.com/watch/80222782"
+      },
+      {
+        "no": 5,
+        "title": "Chapter Five: The Flayed",
+        "description": "Panic hits the hospital. Back at the mall, Steve and Robin discover a secret.",
+        "image_url": "https://example.com/s3_e5.jpg",
+        "link": "https://www.netflix.com/watch/80222783"
+      },
+      {
+        "no": 6,
+        "title": "Chapter Six: E Pluribus Unum",
+        "description": "Dr. Alexei reveals what the Russians have been building.",
+        "image_url": "https://example.com/s3_e6.jpg",
+        "link": "https://www.netflix.com/watch/80222784"
+      },
+      {
+        "no": 7,
+        "title": "Chapter Seven: The Bite",
+        "description": "Time is running out as an assassin closes in. The Mind Flayer attacks.",
+        "image_url": "https://example.com/s3_e7.jpg",
+        "link": "https://www.netflix.com/watch/80222785"
+      },
+      {
+        "no": 8,
+        "title": "Chapter Eight: The Battle of Starcourt",
+        "description": "Terror reigns in the food court as the gang faces their biggest threat yet.",
+        "image_url": "https://example.com/s3_e8.jpg",
+        "link": "https://www.netflix.com/watch/80222786"
+      }
+    ]
+  },
+  {
+    "season": "Season 4",
+    "episodes": [
+      {
+        "no": 1,
+        "title": "Chapter One: The Hellfire Club",
+        "description": "D&D at high school gets real when a new threat strikes Hawkins.",
+        "image_url": "https://example.com/s4_e1.jpg",
+        "link": "https://www.netflix.com/watch/81155691"
+      },
+      {
+        "no": 2,
+        "title": "Chapter Two: Vecna's Curse",
+        "description": "A terrifying death shakes the town. Max explores her trauma.",
+        "image_url": "https://example.com/s4_e2.jpg",
+        "link": "https://www.netflix.com/watch/81155692"
+      },
+      {
+        "no": 3,
+        "title": "Chapter Three: The Monster and the Superhero",
+        "description": "Eleven is taken. Dustin and the crew hunt for a gateway.",
+        "image_url": "https://example.com/s4_e3.jpg",
+        "link": "https://www.netflix.com/watch/81155693"
+      },
+      {
+        "no": 4,
+        "title": "Chapter Four: Dear Billy",
+        "description": "Max is running out of time. Hopper fights for his life in Russia.",
+        "image_url": "https://example.com/s4_e4.jpg",
+        "link": "https://www.netflix.com/watch/81155694"
+      },
+      {
+        "no": 5,
+        "title": "Chapter Five: The Nina Project",
+        "description": "Eleven faces her past to reclaim her future. The kids find a way in.",
+        "image_url": "https://example.com/s4_e5.jpg",
+        "link": "https://www.netflix.com/watch/81155695"
+      },
+      {
+        "no": 6,
+        "title": "Chapter Six: The Dive",
+        "description": "Steve takes a plunge. Eleven finds her way back to 1979.",
+        "image_url": "https://example.com/s4_e6.jpg",
+        "link": "https://www.netflix.com/watch/81155696"
+      },
+      {
+        "no": 7,
+        "title": "Chapter Seven: The Massacre at Hawkins Lab",
+        "description": "The origins of Henry Creel are revealed in a shocking confrontation.",
+        "image_url": "https://example.com/s4_e7.jpg",
+        "link": "https://www.netflix.com/watch/81155697"
+      },
+      {
+        "no": 8,
+        "title": "Chapter Eight: Papa",
+        "description": "As the military moves in, Eleven prepares to leave the nest.",
+        "image_url": "https://example.com/s4_e8.jpg",
+        "link": "https://www.netflix.com/watch/81155698"
+      },
+      {
+        "no": 9,
+        "title": "Chapter Nine: The Piggyback",
+        "description": "The group enters the Upside Down for a multi-front assault on Vecna.",
+        "image_url": "https://example.com/s4_e9.jpg",
+        "link": "https://www.netflix.com/watch/81155699"
+      }
+    ]
+  },
+  {
+    "season": "Season 5",
+    "episodes": [
+      {
+        "no": 1,
+        "title": "Chapter One: The Crawl",
+        "description": "The battle for Hawkins officially begins as reality starts to fracture.",
+        "image_url": "https://example.com/s5_e1.jpg",
+        "link": "https://www.netflix.com/title/80057281"
+      },
+      {
+        "no": 2,
+        "title": "Chapter Two: The Vanishing of Holly Wheeler",
+        "description": "A new mystery arises when a familiar face goes missing in the chaos.",
+        "image_url": "https://example.com/s5_e2.jpg",
+        "link": "https://www.netflix.com/title/80057281"
+      },
+      {
+        "no": 3,
+        "title": "Chapter Three: The Turnbow Trap",
+        "description": "The group sets a trap for a beast that has crossed over into our world.",
+        "image_url": "https://example.com/s5_e3.jpg",
+        "link": "https://www.netflix.com/title/80057281"
+      },
+      {
+        "no": 4,
+        "title": "Chapter Four: Sorcerer",
+        "description": "Will discovers a hidden power within himself that connects him to the Mind Flayer.",
+        "image_url": "https://example.com/s5_e4.jpg",
+        "link": "https://www.netflix.com/title/80057281"
+      },
+      {
+        "no": 5,
+        "title": "Chapter Five: Shock Jock",
+        "description": "The group uses the airwaves to find the lost kids of Hawkins.",
+        "image_url": "https://example.com/s5_e5.jpg",
+        "link": "https://www.netflix.com/title/80057281"
+      },
+      {
+        "no": 6,
+        "title": "Chapter Six: Escape from Camazotz",
+        "description": "A daring rescue mission takes place in the heart of the Upside Down.",
+        "image_url": "https://example.com/s5_e6.jpg",
+        "link": "https://www.netflix.com/title/80057281"
+      },
+      {
+        "no": 7,
+        "title": "Chapter Seven: The Bridge",
+        "description": "The ultimate connection between Eleven and Vecna is finally revealed.",
+        "image_url": "https://example.com/s5_e7.jpg",
+        "link": "https://www.netflix.com/title/80057281"
+      },
+      {
+        "no": 8,
+        "title": "Chapter Eight: The Rightside Up",
+        "description": "The world stands still as the gateway is finally addressed for the last time.",
+        "image_url": "https://example.com/s5_e8.jpg",
+        "link": "https://www.netflix.com/title/80057281"
+      }
+    ]
+  }
+]
