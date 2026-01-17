@@ -1,5 +1,4 @@
-
-@font-face{
+@font-face {
     font-family: 'strangerFont';
     src: url("../../font/itc-benguiat-std/ITCBenguiatStdBoldCn.OTF") format("opentype");
     font-weight: bold;
@@ -7,26 +6,27 @@
 }
 
 
-.home {
+.background {
     width: 100%;
     height: 100vh;
-    z-index: 1;
+    z-index: -1;
     background-image: url("../../images/homePage/home.png");
     left: 0;
     top: 0;
-    position: relative;
+    position: fixed;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
 .video {
+    position: relative;
+    z-index: 10;
     box-shadow: 0 0 20px #000000;
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
-    width: 90%;
+    z-index: 5;
+    width: 95%;
     height: 85vh;
     border-radius: 20px;
     margin-top: 15vh;
@@ -34,8 +34,9 @@
     background-size: cover;
     display: flex;
     flex-direction: row;
-justify-content: space-between;
+    justify-content: space-between;
     box-sizing: border-box;
+    align-items: flex-end;
     background-image: url("../../images/homePage/homevideo.webp");
 }
 
@@ -52,33 +53,38 @@ justify-content: space-between;
     left: 10;
     color: white;
 }
-#strangerThings{
+
+#strangerThings {
     margin-top: -20px;
     font-size: 4em;
     white-space: nowrap;
     font-family: "strangerFont";
     font-weight: 800;
- 
-  text-transform: uppercase;
+
+    text-transform: uppercase;
 }
-#watchNow{
+
+#watchNow {
     background-color: red;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: 2px solid rgb(159, 0, 0);
 }
 
 #netflixLogo {
     height: 100px;
 }
 
-.play img ,.audio img {
+.play img,
+.audio img {
     height: 30px;
     width: auto;
     filter: invert(1);
     cursor: pointer;
 }
 
-.controllers{
+.controllers {
     width: max-content;
     display: flex;
     flex-direction: row;
@@ -87,5 +93,152 @@ justify-content: space-between;
     float: right;
     padding: 10px 20px;
     gap: 20px;
+}
+
+.information {
+    position: relative;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 40px 0;
+    z-index: 10;
+    background-color: hsla(221, 51%, 16%, 0.358);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.355);
+    border-radius: 10px;
+
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    opacity: 70%;
+}
+
+.info {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.778);
+
+    p {
+        flex: 1;
+
+        b {
+            color: white;
+        }
+    }
+
+}
+
+.info p:first-child {
+    border-right: 2px solid rgba(255, 255, 255, 0.479);
+    padding-right: 40px;
+}
+
+
+#trailer,
+#teaser,
+#details {
+
+    color: white !important;
+    font-size: 2em;
+    position: relative;
+    z-index: 10;
+    width: 85%;
+    margin: 40px auto 10px auto;
+    display: block;
+}
+
+.trailersBody ,.teasersBody{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto 20px auto;
+    width: 80%;
+    z-index: 10;
+    color: white;
+}
+
+.trailers,.teasers {color: white;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.ytLink {
+    height: 180px;
+    width: 100%;
+    background-color: #ffffff40;
+    border-radius: 10px;
+    margin-bottom: 10px; z-index:10 ;
+}
+.trailers p,.teasers p{
+    margin-top:10px;
+    text-align: center;
+}
+
+
+.detail{
+     position: relative;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  margin: 10px 0 20px 0;
+    z-index: 10;
+    color: white;
+    justify-content: space-between;
+}
+
+.detail div{
+     position: relative;
+     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px 20px 20px;
+    z-index: 10;
+    background-color: hsla(221, 51%, 16%, 0.358);
+    color: rgba(255, 255, 255, 0.673);
+    border: 1px solid rgba(255, 255, 255, 0.355);
+    border-radius: 10px;
+
+    b{margin-top: 15px;
+        color: white;
+        margin-bottom:-10px;
+    }
     
+}
+
+.footerWatchNow{
+     background-color: red;
+    padding: 10px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    font-weight: 500;
+    border: 2px solid rgb(159, 0, 0); 
+    text-transform: uppercase;
+    
+    width: max-content;
+    position: relative;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 800;
 }
