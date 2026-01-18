@@ -52,7 +52,7 @@ function initGsapSlider() {
         ease: "power2.out",
       });
     } else {
-      gsap.to(container, { x: -10, duration: 0.1, yoyo: true, repeat: 1 });
+      gsap.to(container, { x: +10, duration: 0.1, yoyo: true, repeat: 1 });
     }
   });
 }

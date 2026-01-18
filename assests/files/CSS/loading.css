@@ -30,7 +30,7 @@
     height: 10px;
     background: #8b0000;
     width: 0px;
-    box-shadow: 0 0 15px #ff0000;
+    box-shadow: 0 0 15px #ff000066;
     margin: 0 0 10 0;
     flex-shrink: 0;
     display: inline-block;
@@ -71,5 +71,3 @@
     margin-top: -25%;
 }
 
-/*  make hte opacity 0 nad visibilty hidden 
-*/
