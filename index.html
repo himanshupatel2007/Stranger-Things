@@ -15,7 +15,7 @@
 <body>
     <!--
     remove the display none when website is made-->
-    <div class="loadingScreen glow" style="display: none">
+    <div class="loadingScreen glow">
         <div class="finalBackground"></div>
 
         <div class="bar top-bar"></div>
@@ -54,6 +54,13 @@
     <main>
         <section class="home">
             <div class="video">
+                <div class="videoBackground "></div>
+                <iframe id="player"
+                    src="https://player.vimeo.com/video/1155677596?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" title="shortVideo - Made with Clipchamp"></iframe>
+
                 <div class="mainContent">
                     <img id="netflixLogo" src="./assests/images/Netflix_Logo_RGB.png" alt="" />
                     <span id="strangerThings">Stranger Things</span>
@@ -61,10 +68,10 @@
                     <span>Endless entertainment starting at ₹149</span>
                 </div>
                 <div class="controllers">
-                    <div class="play">
+                    <div class="play" id="playBtn">
                         <img src="./assests/images/contents/play-svgrepo-com.svg" alt="" />
                     </div>
-                    <div class="audio">
+                    <div class="audio" id="muteBtn">
                         <img src="./assests/images/contents/audio-svgrepo-com.svg" alt="" />
                     </div>
                 </div>
@@ -150,8 +157,9 @@
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--
-        <script src="./assests/files/JS/loading.js"></script>
         add the loading js here-->
+    <script src="./assests/files/JS/loading.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="./assests/files/JS/home.js"></script>
 
 </body>

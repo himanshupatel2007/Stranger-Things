@@ -5,7 +5,18 @@
     font-style: normal;
 }
 
-
+.videoBackground{
+    background-image: url("../../images/homePage/homevideo.webp");
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+     left: 0;
+    top: 0;
+    position: absolute;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 .background {
     width: 100%;
     height: 100vh;
@@ -19,6 +30,20 @@
     background-size: cover;
 }
 
+#player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw; 
+    height: 56.25vw;/* Aspect ratio 16:9 */
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+  
+    z-index: 2; 
+    pointer-events: none; 
+}
+
 .video {
     font-size: 0.8rem;
     position: relative;
@@ -26,7 +51,6 @@
     box-shadow: 0 0 20px #000000;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 5;
     width: 95%;
     height: 85vh;
     border-radius: 20px;
@@ -38,13 +62,28 @@
     justify-content: space-between;
     box-sizing: border-box;
     align-items: flex-end;
-    background-image: url("../../images/homePage/homevideo.webp");
+    overflow: hidden;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.9), 0 0 20px #000000;
+}
+.video::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Stacked inset shadows for depth */
+    box-shadow: 
+        inset 0 0 100px rgba(0, 0, 0, 1), 
+        inset 0 0 200px rgba(0, 0, 0, 0.9);
+    pointer-events: none; /* Crucial: allows clicks to reach buttons below */
+    z-index: 4; /* Sits above the video and the videoBackground */
 }
 
 .mainContent {
     padding: 15px;
     width: auto;
-    z-index: 3;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -66,6 +105,7 @@
 }
 
 #watchNow {
+    cursor: pointer;
     background-color: red;
     padding: 10px;
     border-radius: 20px;
@@ -94,6 +134,7 @@
     float: right;
     padding: 10px 20px;
     gap: 20px;
+    z-index: 10;
 }
 
 .information {
@@ -175,7 +216,7 @@
     overflow: hidden;
 }
 
-.trailers{
+.trailers {
     color: white;
     min-width: 280px;
     padding: 10px;
@@ -239,7 +280,7 @@
     font-weight: 500;
     border: 2px solid rgb(159, 0, 0);
     text-transform: uppercase;
-
+    cursor: pointer;
     width: max-content;
     position: relative;
     font-size: 1.2em;
