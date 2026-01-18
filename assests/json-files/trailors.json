@@ -1,22 +1,62 @@
 [
   {
     "season": "Season 5 (Final Season)",
-    "link": "https://www.youtube.com/watch?v=gysfObBhaFE"
+    "category": "trailer",
+    "embedId": "https://www.youtube.com/embed/PssKpzB0Ah0",
+    "trailerHeading": "Stranger Things 5 | Official Trailer"
   },
   {
     "season": "Season 4",
-    "link": "https://www.youtube.com/watch?v=yQEondeGvKo"
+    "category": "trailer",
+    "embedId": "https://www.youtube.com/embed/mVsJXiI60a0",
+    "trailerHeading": "Stranger Things 4 | Official Trailer"
   },
   {
     "season": "Season 3",
-    "link": "https://www.youtube.com/watch?v=YEG3bmU_WaA"
+    "category": "trailer",
+    "embedId": "https://www.youtube.com/embed/e4XvO7DItmc",
+    "trailerHeading": "Stranger Things 3 | Official Trailer"
   },
   {
     "season": "Season 2",
-    "link": "https://www.youtube.com/watch?v=vgS2L7WPIO4"
+    "category": "trailer",
+    "embedId": "https://www.youtube.com/embed/bGeL_8LGaDw",
+    "trailerHeading": "Stranger Things 2 | Official Trailer"
   },
   {
     "season": "Season 1",
-    "link": "https://www.youtube.com/watch?v=b9EkMc79ZSU"
+    "category": "trailer",
+    "embedId": "https://www.youtube.com/embed/b9EkMc79ZSU",
+    "trailerHeading": "Stranger Things 1 | Official Trailer"
+  },
+  {
+    "season": "Season 5",
+    "category": "teaser",
+    "embedId": "https://www.youtube.com/embed/iKZyYdwS3Wg",
+    "trailerHeading": "Stranger Things 5 | Official Teaser"
+  },
+  {
+    "season": "Season 4",
+    "category": "teaser",
+    "embedId": "https://www.youtube.com/embed/oB2GYwbIAlM",
+    "trailerHeading": "Stranger Things 4 | 'Russia' Teaser"
+  },
+  {
+    "season": "Season 3",
+    "category": "teaser",
+    "embedId": "https://www.youtube.com/embed/PH3kBCSfL-4",
+    "trailerHeading": "Stranger Things 3 | Title Tease"
+  },
+  {
+    "season": "Season 2",
+    "category": "teaser",
+    "embedId": "https://www.youtube.com/embed/FlEppdeVieA",
+    "trailerHeading": "Stranger Things 2 | Super Bowl Teaser"
+  },
+  {
+    "season": "Season 1",
+    "category": "teaser",
+    "embedId": "https://www.youtube.com/embed/mnd7sFt5c3A",
+    "trailerHeading": "Stranger Things 1 | Official Teaser"
   }
 ]
