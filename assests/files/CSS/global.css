@@ -8,11 +8,14 @@
 
 body {
     width: 100%;
- min-height: 100vh;
-    
-    overflow-x: hidden;
+    box-sizing: border-box;
     background-color: black;
     
+}
+html, body {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden; /* Prevents horizontal shifting */
 }
 
 nav {
@@ -21,8 +24,8 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 5vh;
-    width: 90%;
-    height: 40px;
+    width: 85%;
+    height: 45px;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px black;
@@ -65,24 +68,26 @@ nav {
 }
 
 main{
-    
     padding-bottom: 150px;
 }
 
-::-webkit-scrollbar{
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background: #000000; 
-}
 
-
-::-webkit-scrollbar-thumb {
-    background: #8b0000; 
-    border-radius: 10px;
+*::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+    background: transparent !important;
 }
 
+*::-webkit-scrollbar-track, 
+*::-webkit-scrollbar-thumb {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
 
-::-webkit-scrollbar-thumb:hover {
-    background: #ff0000; 
+/* Force hide for Firefox and Edge */
+html, body, main, section, div {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
 }

@@ -5,7 +5,7 @@ gsap.set("body", { overflow: "hidden" });
 const tl = gsap.timeline();
 
 tl.fromTo(".letter",
-    { 
+    { force3D: true,
         opacity: 0,
         scale: 5,
         x: () => (Math.random() - 0.5) * 4000,
@@ -22,7 +22,7 @@ tl.fromTo(".letter",
         y: 0,
         rotation: 0,
         duration: 10,
-        ease: "expoScale(0.5,7,none)",
+       ease: "power2.out",
         stagger: {
             amount: 1.5,
             from: "random"
@@ -37,7 +37,7 @@ tl.to(".bar", {
 }, "-=1");
 
 tl.to(".bottom-bar", {
-    width: '20%',
+    width: '10%',
     duration: 2,
     ease: "power4.inOut"
 }, "<");
