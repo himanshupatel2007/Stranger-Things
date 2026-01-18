@@ -1,9 +1,7 @@
 const tl = gsap.timeline();
 
-
 tl.fromTo(".letter",
     {
-        
         opacity: 0,
         scale: 5,
         x: () => (Math.random() - 0.5) * 4000,
@@ -11,7 +9,7 @@ tl.fromTo(".letter",
         rotation: () => (Math.random() - 0.5) * 90
     },
     {
-        color: "#e31212",
+        color: "transparent",
         webkitTextStroke: "3px #ac1911",
         textShadow: "0 0 15px #ff0000, 0 0 30px #8b0000",
         opacity: 1,
@@ -28,38 +26,46 @@ tl.fromTo(".letter",
     }
 );
 
-
 tl.to(".bar", {
-    width: '50%',
+    width: '60%',
     duration: 2,
     ease: "power4.inOut"
 }, "-=1");
 
+tl.to(".bottom-bar", {
+    width: '20%',
+    duration: 2,
+    ease: "power4.inOut"
+}, "<");
 
 tl.to(".letter", {
     opacity: 0.8,
     duration: 0.1,
-    scale:0.98,
-    
+    scale: 0.98,
     repeat: 5,
     yoyo: true,
     ease: "rough"
 });
 
-tl.to(".letter, .bar",{
-    opacity:0,
-    duration:4,
-    ease:"power2.inOut",
-    onComplete : ()=>{
-        gsap.set(".letter, .bar,.loadingScreen",{
-            display:"none",
+tl.to(".background", {
+    opacity: 1,
+    duration: 8,
+    ease: "power4.out",
+}, "<")
+
+tl.to(".loadingScreen,.letter,.bar", {
+opacity:0,
+    duration: 4,
+    ease: "power2.inOut",
+    onComplete: () => {
+        gsap.set(".letter, .bar,.loadingScreen", {
+            display: "none",
         })
     }
-})
-
-tl.to(".finalBackground",{
-    opacity:1,
-    duration :8,
-    ease:"power4.out",
-
 },"<")
+
+tl.to("nav,main",{
+    opacity:1,
+    duration:3,
+    ease:"power2.out"
+})

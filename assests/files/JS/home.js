@@ -105,7 +105,7 @@ muteBtn.addEventListener("click", () => {
     vimeoPlayer.setMuted(false).then(() => {
       mute = false;
       muteBtn.innerHTML = '<img src="./assests/images/contents/audio-svgrepo-com.svg" alt="" />';
-      
+
     });
   } else {
     vimeoPlayer.setMuted(true).then(() => {
@@ -115,3 +115,12 @@ muteBtn.addEventListener("click", () => {
     });
   }
 });
+
+
+let introAudio = document.querySelector("audio")
+
+function playIntroAudio() {
+ introAudio.play();
+}
+
+playIntroAudio()

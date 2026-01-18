@@ -15,7 +15,7 @@
 <body>
     <!--
     remove the display none when website is made-->
-    <div class="loadingScreen glow">
+    <div class="loadingScreen">
         <div class="finalBackground"></div>
 
         <div class="bar top-bar"></div>
@@ -32,15 +32,19 @@
         </div>
 
         <div class="line-container" id="things" style="margin-top: 20px">
+            <span class="bottom-bar"></span>
             <span class="letter">T</span>
             <span class="letter">H</span>
             <span class="letter">I</span>
             <span class="letter">N</span>
             <span class="letter">G</span>
             <span class="letter">S</span>
+            <span class="bottom-bar"></span>
         </div>
 
+      <!-- 
         <div class="bar bottom-bar"></div>
+        --> 
     </div>
     <nav>
         <img id="navLogo" src="./assests/images/Netflix_Logo_RGB.png" alt="" />
@@ -51,7 +55,7 @@
         </div>
     </nav>
     <div class="background"></div>
-    <main>
+    <main >
         <section class="home">
             <div class="video">
                 <div class="videoBackground "></div>
@@ -152,13 +156,14 @@
         </section>
         <section class="seasons"></section>
     </main>
+    <audio src="./assests/strangerthings_theme.mp3" type="audio/mpeg"></audio>
     <footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--
         add the loading js here-->
-    <script src="./assests/files/JS/loading.js"></script>
+        <script src="./assests/files/JS/animation.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="./assests/files/JS/home.js"></script>
 
