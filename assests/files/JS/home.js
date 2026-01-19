@@ -82,18 +82,19 @@ playBtn.addEventListener("click", () => {
       play = false;
       gsap.to(videoThumbnail, {
         opacity: 0,
-        duration: 2,
+        duration: 4,
         ease: "power2.inOut",
       });
     });
   } else {
     vimeoPlayer.pause().then(() => {
       play = true;
-      playBtn.innerHTML = ' <img src="./assests/images/contents/play-svgrepo-com.svg" alt="" />';
+      playBtn.innerHTML =
+        ' <img src="./assests/images/contents/play-svgrepo-com.svg" alt="" />';
 
       gsap.to(videoThumbnail, {
         opacity: 1,
-        duration: 2,
+        duration: 4,
         ease: "power2.out",
       });
     });
@@ -104,23 +105,32 @@ muteBtn.addEventListener("click", () => {
   if (mute) {
     vimeoPlayer.setMuted(false).then(() => {
       mute = false;
-      muteBtn.innerHTML = '<img src="./assests/images/contents/audio-svgrepo-com.svg" alt="" />';
-
+      muteBtn.innerHTML =
+        '<img src="./assests/images/contents/audio-svgrepo-com.svg" alt="" />';
     });
   } else {
     vimeoPlayer.setMuted(true).then(() => {
       mute = true;
-      muteBtn.innerHTML = '<img src="./assests/images/contents/audio-off-svgrepo-com.svg" alt="" />';
-
+      muteBtn.innerHTML =
+        '<img src="./assests/images/contents/audio-off-svgrepo-com.svg" alt="" />';
     });
   }
 });
 
-
-let introAudio = document.querySelector("audio")
+let introAudio = document.querySelector("audio");
 
 function playIntroAudio() {
- introAudio.play();
+  introAudio.play();
 }
 
-playIntroAudio()
+vimeoPlayer.getDuration().then((duration) => {
+  const ending = duration - 10;
+  vimeoPlayer.on("timeupdate", (data) => {
+    if (data.seconds > ending) {
+      vimeoPlayer.setCurrrentTime(0);
+      vimeoPlayer.play();
+    }
+  });
+});
+
+playIntroAudio();

@@ -10,12 +10,21 @@ body {
     width: 100%;
     box-sizing: border-box;
     background-color: black;
-    
+
 }
-html, body {
+
+html,
+body {
     height: auto;
     min-height: 100%;
-    overflow-x: hidden; /* Prevents horizontal shifting */
+    overflow-x: hidden;
+}
+
+main,
+section,
+.home {
+    overflow: hidden;
+    height: auto;
 }
 
 nav {
@@ -24,7 +33,7 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 5vh;
-    width: 85%;
+    width: 90%;
     height: 45px;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
@@ -67,7 +76,7 @@ nav {
     height: 50px;
 }
 
-main{
+main {
     padding-bottom: 150px;
 }
 
@@ -79,7 +88,7 @@ main{
     background: transparent !important;
 }
 
-*::-webkit-scrollbar-track, 
+*::-webkit-scrollbar-track,
 *::-webkit-scrollbar-thumb {
     background: transparent !important;
     border: none !important;
@@ -87,7 +96,11 @@ main{
 }
 
 /* Force hide for Firefox and Edge */
-html, body, main, section, div {
+html,
+body,
+main,
+section,
+div {
     scrollbar-width: none !important;
     -ms-overflow-style: none !important;
 }

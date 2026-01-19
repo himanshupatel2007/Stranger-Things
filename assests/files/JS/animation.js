@@ -74,3 +74,15 @@ tl.to("main", {
      onComplete: () => {
        gsap.set("nav", { display: "flex" });}
 }, "-=2");
+
+tl.from("nav",{
+    y:"-10%",
+    opacity:0,
+    delay:2,
+},{
+    x:0,
+    y:0,
+    opacity:1,
+    duration:2,
+    ease:"power2.out"
+},"<")
