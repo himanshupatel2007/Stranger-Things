@@ -1,4 +1,4 @@
-async function loadTrialers() {
+export async function loadTrialers() {
   try {
     const response = await fetch("./assests/json-files/trailors.json");
     const data = await response.json();
@@ -18,7 +18,6 @@ async function loadTrialers() {
   }
 }
 
-loadTrialers();
 let currentStep = 0;
 
 function initGsapSlider() {
@@ -76,16 +75,22 @@ const playBtn = document.querySelector("#playBtn");
 const muteBtn = document.querySelector("#muteBtn");
 playBtn.addEventListener("click", () => {
   if (play) {
-    vimeoPlayer.play().then(() => {
-      playBtn.innerHTML =
-        ' <img src="./assests/images/contents/pause-circle-svgrepo-com.svg" alt="" />';
-      play = false;
-      gsap.to(videoThumbnail, {
-        opacity: 0,
-        duration: 4,
-        ease: "power2.inOut",
-      });
+    play = false;
+    gsap.to(videoThumbnail, {
+      opacity: 0,
+      duration: 4,
+      ease: "power2.inOut",
+      onStart: () => {
+        vimeoPlayer.play();
+        vimeoPlayer.setMuted(false);
+        mute = false;
+        muteBtn.innerHTML =
+          '<img src="./assests/images/contents/audio-svgrepo-com.svg" alt="" />';
+      },
     });
+
+    playBtn.innerHTML =
+      ' <img src="./assests/images/contents/pause-circle-svgrepo-com.svg" alt="" />';
   } else {
     vimeoPlayer.pause().then(() => {
       play = true;
@@ -116,21 +121,3 @@ muteBtn.addEventListener("click", () => {
     });
   }
 });
-
-let introAudio = document.querySelector("audio");
-
-function playIntroAudio() {
-  introAudio.play();
-}
-
-vimeoPlayer.getDuration().then((duration) => {
-  const ending = duration - 10;
-  vimeoPlayer.on("timeupdate", (data) => {
-    if (data.seconds > ending) {
-      vimeoPlayer.setCurrrentTime(0);
-      vimeoPlayer.play();
-    }
-  });
-});
-
-playIntroAudio();

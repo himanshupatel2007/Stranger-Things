@@ -1,22 +1,23 @@
 @font-face {
-    font-family: 'strangerFont';
+    font-family: "strangerFont";
     src: url("../../font/itc-benguiat-std/ITCBenguiatStdBoldCn.OTF") format("opentype");
     font-weight: bold;
     font-style: normal;
 }
 
-.videoBackground{
+.videoBackground {
     background-image: url("../../images/homePage/homevideo.webp");
     width: 100%;
     height: 100%;
     z-index: 7;
-     left: 0;
+    left: 0;
     top: 0;
     position: absolute;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
+
 .background {
     width: 100%;
     height: 100vh;
@@ -36,12 +37,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 90vw; 
-    height: 80vw;
-    
+    width: 100vw;
+    height: 90vw;
+
     transform: translate(-50%, -50%);
-    z-index: 2; 
-    pointer-events: none; 
+    z-index: 2;
+    pointer-events: none;
 }
 
 .video {
@@ -51,10 +52,10 @@
     box-shadow: 0 0 20px #000000;
     left: 50%;
     transform: translateX(-50%);
-    width: 85%;
-    height: 85vh;
+    width: 90%;
+    height: 90vh;
     border-radius: 20px;
-    margin-top: 12vh;
+    margin-top: 40px;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -62,21 +63,26 @@
     justify-content: space-between;
     align-items: flex-end;
     overflow: hidden;
-    box-shadow: inset 0 0 50px rgba(0,0,0,0.9), 0 0 20px #000000;
+    box-shadow:
+        inset 0 0 50px rgba(0, 0, 0, 0.9),
+        0 0 20px #000000;
 }
+
 .video::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-overflow: hidden;
-    box-shadow: 
-        inset 0 0 100px rgba(0, 0, 0, 1), 
+    overflow: hidden;
+    box-shadow:
+        inset 0 0 100px rgba(0, 0, 0, 1),
         inset 0 0 200px rgb(0, 0, 0);
-    pointer-events: none; /* Crucial: allows clicks to reach buttons below */
-    z-index: 4; /* Sits above the video and the videoBackground */
+    pointer-events: none;
+    /* Crucial: allows clicks to reach buttons below */
+    z-index: 4;
+    /* Sits above the video and the videoBackground */
 }
 
 .mainContent {
@@ -178,7 +184,6 @@ overflow: hidden;
             color: white;
         }
     }
-
 }
 
 .info p:first-child {
@@ -186,10 +191,8 @@ overflow: hidden;
     padding-right: 10px;
 }
 
-
 #trailer,
 #details {
-
     color: white !important;
     font-size: 1.8rem;
     position: relative;
@@ -230,9 +233,6 @@ overflow: hidden;
     z-index: 10;
 }
 
-
-
-
 .detail {
     position: relative;
     width: 85%;
@@ -267,26 +267,24 @@ overflow: hidden;
         color: white;
         margin-bottom: -10px;
     }
-
 }
 
 .footerWatchNow {
+    bottom: 20px;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 99;
     background-color: red;
     padding: 10px 15px;
-    left: 50%;
-    transform: translateX(-50%);
     border-radius: 25px;
     font-weight: 500;
     border: 2px solid rgb(159, 0, 0);
     text-transform: uppercase;
     cursor: pointer;
     width: max-content;
-    position: relative;
     font-size: 1.2em;
     color: white;
-    font-weight: 800;
 }
-
 
 .prev,
 .next {
@@ -295,6 +293,7 @@ overflow: hidden;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
     img {
         width: 20px;
         height: 80px;
@@ -302,9 +301,8 @@ overflow: hidden;
         border-radius: 10px;
         padding: 5px;
         filter: brightness(0) invert(1);
-    };
+    }
 }
-
 
 .trailerContainer {
     display: flex;

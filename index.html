@@ -13,7 +13,23 @@
 </head>
 
 <body>
-    <!--
+    <div id="welcome">
+        <iframe id="demogorgon"
+            src="https://player.vimeo.com/video/1156513066?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&background=1"
+            frameborder="0" allow="
+          autoplay;
+          fullscreen;
+          picture-in-picture;
+          clipboard-write;
+          encrypted-media;
+          web-share;
+        " referrerpolicy="strict-origin-when-cross-origin" title="Demogorgon"></iframe>
+        <h1 id="welcomeToHawkins">Welcome to HAWKINS</h1>
+        <span id="visit">Visit
+            <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " style="height: 20px; filter: invert(1)"
+                alt="-->" /></span>
+    </div>
+    <!--SS
     remove the display none when website is made-->
     <div class="loadingScreen">
         <div class="finalBackground"></div>
@@ -58,13 +74,17 @@
     <main>
         <section class="home">
             <div class="video">
-                <div class="videoBackground "></div>
-                
+                <div class="videoBackground"></div>
                 <iframe id="player"
-                    src="https://player.vimeo.com/video/1155730884?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                    frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" title="FinalVersion"></iframe>
+                    src="https://player.vimeo.com/video/1156465134?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&background=1"
+                    frameborder="0" allow="
+              autoplay;
+              fullscreen;
+              picture-in-picture;
+              clipboard-write;
+              encrypted-media;
+              web-share;
+            " referrerpolicy="strict-origin-when-cross-origin" title="strangerThings"></iframe>
 
                 <div class="mainContent">
                     <img id="netflixLogo" src="./assests/images/Netflix_Logo_RGB.png" alt="" />
@@ -105,7 +125,9 @@
             </div>
             <h1 id="trailer">Trailers</h1>
             <div class="trailersBody">
-                <div class="prev Trailer"><img src="./assests/images/contents/previous-svgrepo-com.svg" alt="<"></div>
+                <div class="prev Trailer">
+                    <img src="./assests/images/contents/previous-svgrepo-com.svg" alt="<" />
+                </div>
                 <div class="trailerContainer">
                     <div class="trailers">
                         <iframe class="ytLink" src="
@@ -114,7 +136,9 @@
                         <p>Trailer Part 3: Strnager Things 5</p>
                     </div>
                 </div>
-                <div class="next Trailer"><img src="./assests/images/contents/next-svgrepo-com.svg" alt=">"></div>
+                <div class="next Trailer">
+                    <img src="./assests/images/contents/next-svgrepo-com.svg" alt=">" />
+                </div>
             </div>
             <h1 id="details">More Details</h1>
             <div class="detail">
@@ -150,11 +174,7 @@
             </div>
             <div class="footerWatchNow">Watch now</div>
         </section>
-        <section class="about">
-
-
-
-        </section>
+        <section class="about"></section>
         <section class="seasons"></section>
     </main>
     <audio src="./assests/strangerthings_theme.mp3" type="audio/mpeg"></audio>
@@ -164,10 +184,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--
         add the loading js here-->
-    <script src="./assests/files/JS/animation.js"></script>
+    <script type="module" src="./assests/files/JS/animation.js"></script>
+    <script type="module" src="./assests/files/JS/home.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
-    <script src="./assests/files/JS/home.js"></script>
-
 </body>
 
 </html>

@@ -5,40 +5,34 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
 body {
     width: 100%;
     box-sizing: border-box;
     background-color: black;
-
+    touch-action: none;
 }
 
 html,
 body {
-    height: auto;
-    min-height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100vh;
 }
 
+nav,
 main,
-section,
-.home {
-    overflow: hidden;
-    height: auto;
+.loadingScreen {
+    display: none;
 }
 
 nav {
-    font-size: 0.8rem;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 5vh;
+    top: 20px;
+    margin: 20px auto;
+    margin-top: 20px;
     width: 90%;
-    height: 45px;
-    overflow: hidden;
+    height: 60px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px black;
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 15px;
     color: rgba(255, 255, 255, 0.8);
@@ -47,7 +41,7 @@ nav {
     align-items: center;
     padding: 0px 20px;
     border-radius: 40px;
-    position: fixed;
+    position: sticky;
     z-index: 100;
 }
 
@@ -71,15 +65,15 @@ nav {
     color: white;
 }
 
-
 #navLogo {
     height: 50px;
+    display: block;
+    width: auto;
 }
 
 main {
     padding-bottom: 150px;
 }
-
 
 *::-webkit-scrollbar {
     width: 0 !important;
