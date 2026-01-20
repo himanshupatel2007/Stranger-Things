@@ -65,7 +65,7 @@ document.querySelector(".footerWatchNow").addEventListener("click", () => {
 
 const iframe = document.querySelector("#player");
 const vimeoPlayer = new Vimeo.Player(iframe);
-
+vimeoPlayer.setLoop(true)
 const videoThumbnail = document.querySelector(".videoBackground");
 
 let play = true;
