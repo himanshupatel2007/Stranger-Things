@@ -2,61 +2,57 @@
   {
     "season": "Season 5 (Final Season)",
     "category": "trailer",
-    "embedId": "https://www.youtube.com/embed/PssKpzB0Ah0",
-    "trailerHeading": "Stranger Things 5 | Official Trailer"
-  },
-  {
-    "season": "Season 4",
-    "category": "trailer",
-    "embedId": "https://www.youtube.com/embed/mVsJXiI60a0",
-    "trailerHeading": "Stranger Things 4 | Official Trailer"
-  },
-  {
-    "season": "Season 3",
-    "category": "trailer",
-    "embedId": "https://www.youtube.com/embed/e4XvO7DItmc",
-    "trailerHeading": "Stranger Things 3 | Official Trailer"
-  },
-  {
-    "season": "Season 2",
-    "category": "trailer",
-    "embedId": "https://www.youtube.com/embed/bGeL_8LGaDw",
-    "trailerHeading": "Stranger Things 2 | Official Trailer"
-  },
-  {
-    "season": "Season 1",
-    "category": "trailer",
-    "embedId": "https://www.youtube.com/embed/b9EkMc79ZSU",
-    "trailerHeading": "Stranger Things 1 | Official Trailer"
+    "embedId": "https://www.youtube.com/watch?v=PssKpzB0Ah0",
+    "trailerHeading": "Stranger Things 5 | Official Trailer",
+    "imagePath": "./assests/images/homePage/trailers/s5.jpg"
   },
   {
     "season": "Season 5",
     "category": "teaser",
-    "embedId": "https://www.youtube.com/embed/iKZyYdwS3Wg",
-    "trailerHeading": "Stranger Things 5 | Official Teaser"
+    "embedId": "https://www.youtube.com/watch?v=iKZyYdwS3Wg",
+    "trailerHeading": "Stranger Things 5 | Title Reveal",
+    "imagePath": "./assests/images/homePage/teasers/s5.jpg"
+  },
+  {
+    "season": "Season 4",
+    "category": "trailer",
+    "embedId": "https://www.youtube.com/watch?v=mVsJXiI60a0",
+    "trailerHeading": "Stranger Things 4 | Official Trailer",
+    "imagePath": "./assests/images/homePage/trailers/s4.jpg"
   },
   {
     "season": "Season 4",
     "category": "teaser",
-    "embedId": "https://www.youtube.com/embed/oB2GYwbIAlM",
-    "trailerHeading": "Stranger Things 4 | 'Russia' Teaser"
+    "embedId": "https://www.youtube.com/watch?v=oB2GYwbIAlM",
+    "trailerHeading": "Stranger Things 4 | 'From Russia with love...'",
+    "imagePath": "./assests/images/homePage/teasers/s4.jpg"
+  },
+  {
+    "season": "Season 3",
+    "category": "trailer",
+    "embedId": "https://www.youtube.com/watch?v=e4XvO7DItmc",
+    "trailerHeading": "Stranger Things 3 | Official Trailer",
+    "imagePath": "./assests/images/homePage/trailers/s3.jpg"
   },
   {
     "season": "Season 3",
     "category": "teaser",
-    "embedId": "https://www.youtube.com/embed/PH3kBCSfL-4",
-    "trailerHeading": "Stranger Things 3 | Title Tease"
+    "embedId": "https://www.youtube.com/watch?v=PH3kBCSfL-4",
+    "trailerHeading": "Stranger Things 3 | Title Tease",
+    "imagePath": "./assests/images/homePage/teasers/s3.jpg"
   },
   {
     "season": "Season 2",
-    "category": "teaser",
-    "embedId": "https://www.youtube.com/embed/FlEppdeVieA",
-    "trailerHeading": "Stranger Things 2 | Super Bowl Teaser"
+    "category": "trailer",
+    "embedId": "https://www.youtube.com/watch?v=R1ZXOOLMJ8s",
+    "trailerHeading": "Stranger Things 2 | Final Trailer",
+    "imagePath": "./assests/images/homePage/trailers/s2.jpg"
   },
   {
     "season": "Season 1",
-    "category": "teaser",
-    "embedId": "https://www.youtube.com/embed/mnd7sFt5c3A",
-    "trailerHeading": "Stranger Things 1 | Official Teaser"
+    "category": "trailer",
+    "embedId": "https://www.youtube.com/watch?v=b9EkMc79ZSU",
+    "trailerHeading": "Stranger Things 1 | Official Trailer",
+    "imagePath": "./assests/images/homePage/trailers/s1.jpg"
   }
 ]

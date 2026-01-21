@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assests/favicon/netflixLogo.png" type="image/x-icon" />
     <title>Stranger Things</title>
+
     <link rel="stylesheet" href="./assests/files/CSS/loading.css" />
     <link rel="stylesheet" href="/assests/files/CSS/home.css" />
     <link rel="stylesheet" href="./assests/files/CSS/global.css" />
 </head>
 
 <body>
-    <div id="welcome">
+    <div id="welcome" >
         <iframe id="demogorgon"
-            src="https://player.vimeo.com/video/1156757420?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&background=1"
+            src="https://player.vimeo.com/video/1156513066?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&background=1"
             frameborder="0" allow="
           autoplay;
           fullscreen;
@@ -24,13 +25,18 @@
           web-share;
         " referrerpolicy="strict-origin-when-cross-origin" title="Demogorgon"></iframe>
         <h1 id="welcomeToHawkins">Welcome to HAWKINS</h1>
-        <span id="visit">Visit
+       <div class="welcomediv">
+         <span class="welcomeButton" id="visitHome">Visit Home
             <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " style="height: 20px; filter: invert(1)"
                 alt="-->" /></span>
+        <span class="welcomeButton" id="goThrough">Go Through Animation
+            <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " style="height: 20px; filter: invert(1)"
+                alt="-->" /></span>
+       </div>
     </div>
     <!--SS
     remove the display none when website is made-->
-    <div class="loadingScreen">
+    <div class="loadingScreen" >
         <div class="finalBackground"></div>
 
         <div class="bar top-bar"></div>
@@ -71,11 +77,11 @@
     </nav>
     <div class="background"></div>
     <main>
-        <section class="home">
+        <section class="home" >
             <div class="video">
                 <div class="videoBackground"></div>
                 <iframe id="player"
-                    src="https://player.vimeo.com/video/1156465134?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&background=1"
+                    src="https://player.vimeo.com/video/1156773331?badge=0autopause=0&amp;player_id=0&amp;app_id=58479&background=1"
                     frameborder="0" allow="
               autoplay;
               fullscreen;
@@ -128,12 +134,6 @@
                     <img src="./assests/images/contents/previous-svgrepo-com.svg" alt="<" />
                 </div>
                 <div class="trailerContainer">
-                    <div class="trailers">
-                        <iframe class="ytLink" src="
-                        " frameborder="0"></iframe>
-
-                        <p>Trailer Part 3: Strnager Things 5</p>
-                    </div>
                 </div>
                 <div class="next Trailer">
                     <img src="./assests/images/contents/next-svgrepo-com.svg" alt=">" />
@@ -173,7 +173,9 @@
             </div>
             <div class="footerWatchNow">Watch now</div>
         </section>
-        <section class="about"></section>
+        <section class="about">
+
+        </section>
         <section class="seasons"></section>
     </main>
     <audio src="./assests/strangerthings_theme.mp3" type="audio/mpeg"></audio>
@@ -183,9 +185,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--
         add the loading js here-->
-    <script type="module" src="./assests/files/JS/animation.js"></script>
+        <script type="module" src="./assests/files/JS/animation.js"></script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
     <script type="module" src="./assests/files/JS/home.js"></script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,8 @@ export async function loadTrialers() {
     trailersContainer.innerHTML = "";
     data.forEach((item) => {
       let element = ` <div class="trailers">
-                        <iframe class="ytLink"src="${item.embedId}" frameborder="0" allowfullscreen></iframe><div>${item.category}</div>
+                        <div class="ytLink"style="background-image: url(${item.imagePath});"></div>
+                        <div style="opacity: 70%;text-transform: capitalize;" >${item.category}</div>
                         <p>${item.trailerHeading}</p>
                     </div>`;
       trailersContainer.innerHTML += element;

@@ -6,13 +6,12 @@ gsap.set("nav,main", {
     display: "none",
 });
 gsap.to("#demogorgon", {
-    delay: 1,
     opacity: 1,
     duration: 3,
     ease: "power1.in",
 });
 
-let Visitbutton = document.querySelector("#visit");
+let Visitbutton = document.querySelector("#visitHome");
 Visitbutton.addEventListener("click", () => {
     gsap.to("#welcome", {
         opacity: 0,
@@ -110,7 +109,6 @@ Visitbutton.addEventListener("click", () => {
 
                                 onComplete: () => {
                                     gsap.set(".loadingScreen", { display: "none" });
-                                    gsap.set("body", { overflow: "auto" });
                                 },
                             },
                             "<",
@@ -137,12 +135,13 @@ Visitbutton.addEventListener("click", () => {
                             "main",
                             {
                                 opacity: 0,
-                                display: "block",
+                               
                             },
                             {
                                 onComplete: () => {
                                     loadTrialers();
                                 },
+                                 display: "block",
                                 opacity: 1,
                                 duration: 2,
                                 ease: "power2.out",

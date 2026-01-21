@@ -1,4 +1,4 @@
-* {
+* { user-select: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,17 +14,14 @@ body {
 
 html,
 body {
-    overflow: hidden;
-    height: 100vh;
-}
-
-nav,
-main,
-.loadingScreen {
-    display: none;
+    min-width: 1200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: auto;
 }
 
 nav {
+    
     top: 20px;
     margin: 20px auto;
     width: 90%;
@@ -71,6 +68,7 @@ nav {
 }
 
 main {
-    padding-bottom: 150px;
+   /* display: none;
+*/    padding-bottom: 150px;
 }
 
