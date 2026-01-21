@@ -23,7 +23,7 @@
     height: 100vh;
     z-index: -1;
     opacity: 0;
-    background-image: url("../../images/homePage/home.jpg");
+    background-image: url("../../images/homePage/home.webp");
     left: 0;
     top: 0;
     position: fixed;

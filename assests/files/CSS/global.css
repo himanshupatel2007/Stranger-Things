@@ -27,7 +27,6 @@ main,
 nav {
     top: 20px;
     margin: 20px auto;
-    margin-top: 20px;
     width: 90%;
     height: 60px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -55,7 +54,7 @@ nav {
 }
 
 .navLinks>span {
-    opacity: 100%;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -75,26 +74,3 @@ main {
     padding-bottom: 150px;
 }
 
-*::-webkit-scrollbar {
-    width: 0 !important;
-    height: 0 !important;
-    display: none !important;
-    background: transparent !important;
-}
-
-*::-webkit-scrollbar-track,
-*::-webkit-scrollbar-thumb {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-/* Force hide for Firefox and Edge */
-html,
-body,
-main,
-section,
-div {
-    scrollbar-width: none !important;
-    -ms-overflow-style: none !important;
-}
