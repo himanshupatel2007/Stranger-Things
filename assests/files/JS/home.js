@@ -26,7 +26,6 @@ function initGsapSlider() {
   const cards = document.querySelectorAll(".trailers");
   const nextBtn = document.querySelector(".next");
   const prevBtn = document.querySelector(".prev");
-
   const cardWidth = 300;
   const maxSteps = cards.length / 2;
 
@@ -64,20 +63,34 @@ document.querySelector(".footerWatchNow").addEventListener("click", () => {
   window.location.href = "https://www.netflix.com/in/title/80057281";
 });
 
-const iframe = document.querySelector("#player");
-const vimeoPlayer = new Vimeo.Player(iframe);
-vimeoPlayer.setLoop(true)
 const videoThumbnail = document.querySelector(".videoBackground");
 
 let play = true;
 let mute = false;
+let vimeoPlayer = null;
 
 const playBtn = document.querySelector("#playBtn");
 const muteBtn = document.querySelector("#muteBtn");
+
 playBtn.addEventListener("click", () => {
+
+
+if (!window.Vimeo) {
+        const script = document.createElement('script');
+        script.src = "https://player.vimeo.com/api/player.js";
+        script.onload = () => setupVimeoPlayer(); // Setup once script arrives
+        document.head.appendChild(script);
+    } else {
+        setupVimeoPlayer();
+    }
+});
+
+
+function handlePlayToggle(){
   if (play) {
     play = false;
     gsap.to(videoThumbnail, {
+      delay:0.5,
       opacity: 0,
       duration: 4,
       ease: "power2.inOut",
@@ -105,7 +118,25 @@ playBtn.addEventListener("click", () => {
       });
     });
   }
-});
+
+}
+function setupVimeoPlayer() {
+    const iframe = document.querySelector("#player");
+    const link = "https://player.vimeo.com/video/1156773331?background=1";
+
+    // 3. Set the source only once to avoid re-downloads
+    if (!iframe.src || iframe.src === window.location.href) {
+        iframe.src = link;
+    }
+
+    // 4. Initialize the player ONLY if it doesn't exist
+    if (!vimeoPlayer) {
+        vimeoPlayer = new Vimeo.Player(iframe);
+        vimeoPlayer.setLoop(true);
+    }
+
+    handlePlayToggle();
+}
 
 muteBtn.addEventListener("click", () => {
   if (mute) {

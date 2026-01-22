@@ -1,172 +1,172 @@
 import { loadTrialers } from "./home.js";
 
-window.scrollTo(0, 0);
 
-gsap.set("nav,main", {
-    display: "none",
-});
-gsap.to("#demogorgon", {
-    opacity: 1,
-    duration: 3,
-    ease: "power1.in",
-});
+export function playIntoMusic() {
+    let introAudio = document.querySelector("audio");
 
-let Visitbutton = document.querySelector("#visitHome");
-Visitbutton.addEventListener("click", () => {
+    function fadeOutIntoAudio() {
+        gsap.to(introAudio, {
+            volume: 0,
+            duration: 5,
+            delay: 8,
+            ease: "power1.in",
+            onComplete: () => {
+                introAudio.pause();
+                console.log("Intro Audio stopped");
+            },
+        });
+    }
+
+    introAudio.play(),
+        console.log("audio atarted"),
+        fadeOutIntoAudio()
+}
+
+export function fadeWelcomeScreen() {
     gsap.to("#welcome", {
         opacity: 0,
-        duration: 2.5,
+        duration: 3.5,
         onComplete: () => {
-            (gsap.set("#welcome", {
+            gsap.set("#welcome", {
                 display: "none",
-            }),
-                gsap.set(".loadingScreen", {
+            })
+        }
+    })
+}
+
+export function loadStrangerThingsAnimation() {
+     gsap.set(".loadingScreen", {
                     display: "flex",
                     onComplete: () => {
                         gsap.set("body", { overflow: "hidden" });
-                        const tl = gsap.timeline();
+                    }
+                })
+    const tl = gsap.timeline();
 
-                        tl.fromTo(
-                            "#stranger span",
-                            {
-                                opacity: 0,
-                                y: -100,
-                            },
-                            {
-                                onStart: () => {
-                                    (introAudio.play(),
-                                        console.log("audio atarted"),
-                                        fadeOutIntoAudio());
-                                },
-
-                                delay: 1.5,
-                                opacity: 1,
-                                scale: 1,
-                                y: 0,
-                                duration: 4,
-                                stagger: 1,
-                            },
-                        );
-                        tl.fromTo(
-                            "#things span",
-                            {
-                                opacity: 0,
-                                y: 100,
-                            },
-                            {
-                                opacity: 1,
-                                scale: 1,
-                                y: 0,
-                                duration: 3.5,
-                                stagger: -1,
-                            },
-                            "<",
-                        );
-
-                        tl.to(
-                            ".bar",
-                            {
-                                width: "50%",
-                                duration: 2,
-                                ease: "power4.inOut",
-                            },
-                            "-=1",
-                        );
-
-                        tl.to(
-                            ".bottom-bar",
-                            {
-                                width: "5%",
-                                duration: 2,
-                                ease: "power4.inOut",
-                                border: "3px solid #ac1911",
-                            },
-                            "<",
-                        );
-
-                        tl.to(".letter , .bar,.bottom-bar", {
-                            opacity: 0.8,
-                            duration: 0.1,
-                            scale: 0.98,
-                            textShadow: "0 0 15px #ff0000, 0 0 30px #8b0000",
-                            repeat: 5,
-                            yoyo: true,
-                            ease: "rough",
-                        });
-
-                        tl.to(
-                            ".background",
-                            {
-                                opacity: 1,
-                                duration: 6,
-                                ease: "power4.out",
-                            },
-                            "<",
-                        );
-
-                        tl.to(
-                            ".loadingScreen,.letter,.bar",
-                            {
-                                opacity: 0,
-                                duration: 3,
-                                ease: "power2.inOut",
-                                onComplete: () => {
-                                    gsap.set(".loadingScreen", { display: "none" });
-                                },
-                            },
-                            "<",
-                        );
-                        // 2. Animate the Nav sliding from the top (using a position parameter to overlap)
-                        tl.fromTo(
-                            "nav",
-                            {
-                                y: -150,
-                                opacity: 0,
-                                display: "flex", // Set display here so it can animate immediately
-                            },
-                            {
-                                y: 0,
-                                opacity: 1,
-                                duration: 1.5,
-                                ease: "power4.out",
-                            },
-                            "-=2", // Start this 2 seconds BEFORE the loading screen finish
-                        );
-
-                        // 3. Animate Main (overlap this so it feels faster)
-                        tl.fromTo(
-                            "main",
-                            {
-                                opacity: 0,
-                            },
-                            {
-                                onComplete: () => {
-                                    loadTrialers();
-                                },
-                                display: "block",
-                                opacity: 1,
-                                duration: 2,
-                                ease: "power2.out",
-                            },
-                            "-=1.5", // Overlap with the nav animation
-                        );
-
-                        let introAudio = document.querySelector("audio");
-
-                        function fadeOutIntoAudio() {
-                            gsap.to(introAudio, {
-                                volume: 0,
-                                duration: 5,
-                                delay: 15,
-                                ease: "power1.in",
-                                onComplete: () => {
-                                    introAudio.pause();
-                                    console.log("Intro Audio stopped");
-                                },
-                            });
-                        }
-                    },
-                }));
+    tl.fromTo(
+        "#stranger span",
+        {
+            opacity: 0,
+            y: -250,
         },
+        {
+            delay: 1.5,
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            duration: 2.5,
+            stagger: 0.5,
+        },
+    );
+    tl.fromTo(
+        "#things span",
+        {
+            opacity: 0,
+            y: 250,
+        },
+        {
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            duration: 2.5,
+            stagger: -0.5,
+        },
+        "<",
+    );
+
+    tl.to(
+        ".bar",
+        {
+            width: "50%",
+            duration: 2,
+            ease: "power4.inOut",
+        },
+        "-=1",
+    );
+
+    tl.to(
+        ".bottom-bar",
+        {
+            width: "5%",
+            duration: 2,
+            ease: "power4.inOut",
+            border: "3px solid #ac1911",
+        },
+        "<",
+    );
+
+    tl.to(".letter", {
+        opacity: 0.8,
+        duration: 0.1,
+        scale: 0.98,
+        textShadow: "0 0 15px #ff0000, 0 0 30px #8b0000",
+        repeat: 5,
+        yoyo: true,
+        ease: "rough",
     });
-});
+
+    tl.to(
+        ".background",
+        {
+            opacity: 1,
+            duration: 6,
+            ease: "power4.out",
+        },
+        "<",
+    );
+
+    tl.to(
+        ".loadingScreen,.letter,.bar",
+        {
+            opacity: 0,
+            duration: 4,
+            ease: "power2.inOut",
+            onComplete: () => {
+                gsap.set(".loadingScreen", { display: "none" });
+            },
+        },
+        "<",
+    );
+}
+
+export function loadMainPage() {
+    const tl = gsap.timeline()
+     tl.to(
+        ".background",
+        {
+            opacity: 1,
+            duration: 2.5,
+            ease: "power4.out",
+        }
+    );
+    tl.fromTo(
+        "nav",
+        {
+            y: -150,
+            opacity: 0,
+            display: "flex", 
+        },
+        {delay:1,
+            y: 0,
+            opacity: 1,
+            duration: 1.5,
+            ease: "power4.out",
+        },"-=1"
+    );
+    tl.fromTo(
+        "main",
+        { display:"block",
+            opacity: 0,
+        },
+        {
+            onComplete: () => {
+                loadTrialers();
+            },
+            delay:1,
+            opacity: 1,
+            duration: 2.5,
+            ease: "power2.out",
+        },
+        "<", 
+    );
+}

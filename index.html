@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assests/favicon/NetflixLogo.svg" type="image/x-icon" />
+    <meta name="description" content="An immersive Stranger Things fan experience featuring trailers, villain backstories, and cinematic animations.">
     <title>Stranger Things</title>
-
+    <link rel="shortcut icon" href="./assests/favicon/NetflixLogo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./assests/files/CSS/loading.css" />
     <link rel="stylesheet" href="/assests/files/CSS/home.css" />
     <link rel="stylesheet" href="./assests/files/CSS/global.css" />
 </head>
 
 <body>
+     <div class="background"></div>
     <div id="welcome" >
         <iframe id="demogorgon"
             src="https://player.vimeo.com/video/1156513066?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&background=1"
@@ -27,10 +28,10 @@
         <h1 id="welcomeToHawkins">Welcome to HAWKINS</h1>
        <div class="welcomediv">
          <span class="welcomeButton" id="visitHome">Visit Home
-            <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " style="height: 20px; filter: invert(1)"
+            <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " 
                 alt="-->" /></span>
         <span class="welcomeButton" id="goThrough">Go Through Animation
-            <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " style="height: 20px; filter: invert(1)"
+            <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " 
                 alt="-->" /></span>
        </div>
     </div>
@@ -68,20 +69,20 @@
         -->
     </div>
     <nav >
-        <img id="navLogo" src="./assests/images/Netflix_Logo_RGB.png" alt="" />
+        <img id="navLogo" src="./assests/images/contents/NetflixLogo.webp" alt="" />
         <div class="navLinks">
             <span>Home</span>
             <span>About</span>
             <span>Seasons</span>
         </div>
     </nav>
-    <div class="background"></div>
+   
     <main >
         <section class="home" >
             <div class="video">
                 <div class="videoBackground"></div>
                 <iframe id="player"
-                    src="https://player.vimeo.com/video/1156773331?badge=0autopause=0&amp;player_id=0&amp;app_id=58479&background=1"
+                    src=""
                     frameborder="0" allow="
               autoplay;
               fullscreen;
@@ -92,7 +93,7 @@
             " referrerpolicy="strict-origin-when-cross-origin" title="strangerThings"></iframe>
 
                 <div class="mainContent">
-                    <img id="netflixLogo" src="./assests/images/Netflix_Logo_RGB.png" alt="" />
+                    <img id="netflixLogo" src="./assests/images/contents/NetflixLogo.webp" alt="" />
                     <span id="strangerThings">Stranger Things</span>
                     <span id="watchNow">Watch now</span>
                     <span>Endless entertainment starting at ₹149</span>
@@ -185,9 +186,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--
         add the loading js here-->
-        <script type="module" src="./assests/files/JS/animation.js"></script>
         <script src="https://player.vimeo.com/api/player.js"></script>
-    <script type="module" src="./assests/files/JS/home.js"></script>
+    <script type="module" src="./assests/files/JS/main.js"></script>
 </body>
 
 </html>

@@ -4,20 +4,30 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+html, body {
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important;  /* IE/Edge */
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar,
+.home-wrapper::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari, Edge */
+    width: 0 !important;
+    height: 0 !important;
+}
 
 body {
     width: 100%;
     box-sizing: border-box;
     background-color: black;
-    touch-action: none;
 }
 
 html,
 body {
+    margin: 0;padding: 0;
     min-width: 1200px;
     overflow-x: hidden;
-    overflow-y: scroll;
-    height: auto;
 }
 
 nav {
