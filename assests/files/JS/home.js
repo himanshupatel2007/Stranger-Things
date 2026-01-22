@@ -6,7 +6,7 @@ export async function loadTrialers() {
     trailersContainer.innerHTML = "";
     data.forEach((item) => {
       let element = ` <div class="trailers">
-                        <div class="ytLink"style="background-image: url(${item.imagePath});"></div>
+                        <div class="ytLink" data-link="${item.link}"  style="background-image: url(${item.imagePath});"></div>
                         <div style="opacity: 70%;text-transform: capitalize;" >${item.category}</div>
                         <p>${item.trailerHeading}</p>
                     </div>`;
@@ -19,49 +19,106 @@ export async function loadTrialers() {
   }
 }
 
-let currentStep = 0;
-
 function initGsapSlider() {
-  const container = document.querySelector(".trailerContainer");
-  const cards = document.querySelectorAll(".trailers");
+  const containerWidth =
+    document.querySelector(".trailerContainer").offsetWidth;
+  const cardWidth = document.querySelector(".trailers").offsetWidth;
   const nextBtn = document.querySelector(".next");
   const prevBtn = document.querySelector(".prev");
-  const cardWidth = 300;
-  const maxSteps = cards.length / 2;
+
+  let nextstop = 0;
+  let prevstop = 1;
+
+  const maxSlidingWidth = cardWidth * 8 - containerWidth;
+  let widthtoslide = maxSlidingWidth;
+  let widthSlided = 0;
 
   nextBtn.addEventListener("click", () => {
-    if (currentStep < maxSteps) {
-      currentStep++;
-      gsap.to(cards, {
-        x: `-=${cardWidth}`,
-        duration: 0.6,
-        ease: "power2.out",
-      });
+    if (nextstop) {
+      shake();
+      return;
+    }
+    widthSlided += cardWidth;
+    if (widthSlided > maxSlidingWidth) {
+      let widthexceeded = cardWidth - (widthSlided - maxSlidingWidth);
+      slideleft(widthexceeded);
+      nextstop = 1;
+      prevstop = 0;
+      widthSlided = maxSlidingWidth;
+      widthtoslide = maxSlidingWidth;
     } else {
-      gsap.to(container, { x: -10, duration: 0.1, yoyo: true, repeat: 1 });
+      slideleft(cardWidth);
+      nextstop = 0;
+      prevstop = 0;
     }
   });
 
   prevBtn.addEventListener("click", () => {
-    if (currentStep > 0) {
-      currentStep--;
-      gsap.to(cards, {
-        x: `+=${cardWidth}`,
-        duration: 0.6,
-        ease: "power2.out",
-      });
+    if (prevstop) {
+      shake();
+      return;
+    }
+    if (widthSlided <= cardWidth) {
+      slideright(widthSlided);
+      prevstop = 1;
+      nextstop = 0;
+      widthSlided = 0;
+      widthSlided = 0;
     } else {
-      gsap.to(container, { x: +10, duration: 0.1, yoyo: true, repeat: 1 });
+      if (widthSlided == 0) {
+        shake();
+        return;
+      }
+      widthSlided -= cardWidth;
+      slideright(cardWidth);
+      prevstop = 0;
+      nextstop = 0;
     }
   });
 }
 
-document.querySelector("#watchNow").addEventListener("click", () => {
+function slideleft(value) {
+  const cards = document.querySelectorAll(".trailers");
+  gsap.to(cards, {
+    x: `-=${value}`,
+    duration: 0.6,
+    ease: "power2.out",
+  });
+}
+
+function slideright(value) {
+  const cards = document.querySelectorAll(".trailers");
+  gsap.to(cards, {
+    x: `+=${value}`,
+    duration: 0.6,
+    ease: "power2.out",
+  });
+}
+
+function shake() {
+  const container = document.querySelector(".trailerContainer");
+  if (container) {
+    gsap.fromTo(
+      container,
+      { x: `-5` },
+      {
+        x: `5`,
+        duration: 0.02,
+        yoyo: true,
+        repeat: 4,
+        onComplete: () => {
+          gsap.set(container, {
+          clearProps : "x"
+          });
+        },
+      },
+    );
+  }
+}
+
+export function watchNow() {
   window.location.href = "https://www.netflix.com/in/title/80057281";
-});
-document.querySelector(".footerWatchNow").addEventListener("click", () => {
-  window.location.href = "https://www.netflix.com/in/title/80057281";
-});
+}
 
 const videoThumbnail = document.querySelector(".videoBackground");
 
@@ -72,27 +129,25 @@ let vimeoPlayer = null;
 const playBtn = document.querySelector("#playBtn");
 const muteBtn = document.querySelector("#muteBtn");
 
-playBtn.addEventListener("click", () => {
+export function playVideo() {
+  if (!window.Vimeo) {
+    const script = document.createElement("script");
+    script.src = "https://player.vimeo.com/api/player.js";
+    script.onload = () => setupVimeoPlayer(); // Setup once script arrives
+    document.head.appendChild(script);
+  } else {
+    setupVimeoPlayer();
+  }
+}
 
-
-if (!window.Vimeo) {
-        const script = document.createElement('script');
-        script.src = "https://player.vimeo.com/api/player.js";
-        script.onload = () => setupVimeoPlayer(); // Setup once script arrives
-        document.head.appendChild(script);
-    } else {
-        setupVimeoPlayer();
-    }
-});
-
-
-function handlePlayToggle(){
+function handlePlayToggle() {
   if (play) {
+    
     play = false;
     gsap.to(videoThumbnail, {
-      delay:0.5,
+      delay: 1,
       opacity: 0,
-      duration: 4,
+      duration: 3.5,
       ease: "power2.inOut",
       onStart: () => {
         vimeoPlayer.play();
@@ -118,28 +173,27 @@ function handlePlayToggle(){
       });
     });
   }
-
 }
 function setupVimeoPlayer() {
-    const iframe = document.querySelector("#player");
-    const link = "https://player.vimeo.com/video/1156773331?background=1&dnt=1";
+  const iframe = document.querySelector("#player");
+  const link = "https://player.vimeo.com/video/1156773331?background=1&dnt=1";
 
+  // 3. Set the source only once to avoid re-downloads
+  if (!iframe.src || iframe.src === window.location.href) {
+    iframe.src = link;
+  }
 
-    // 3. Set the source only once to avoid re-downloads
-    if (!iframe.src || iframe.src === window.location.href) {
-        iframe.src = link;
-    }
+  // 4. Initialize the player ONLY if it doesn't exist
+  if (!vimeoPlayer) {
+    vimeoPlayer = new Vimeo.Player(iframe);
+    vimeoPlayer.setLoop(true);
+  }
 
-    // 4. Initialize the player ONLY if it doesn't exist
-    if (!vimeoPlayer) {
-        vimeoPlayer = new Vimeo.Player(iframe);
-        vimeoPlayer.setLoop(true);
-    }
-
-    handlePlayToggle();
+  handlePlayToggle();
 }
 
-muteBtn.addEventListener("click", () => {
+export function mutevideo() {
+  if (!vimeoPlayer) return;
   if (mute) {
     vimeoPlayer.setMuted(false).then(() => {
       mute = false;
@@ -153,4 +207,15 @@ muteBtn.addEventListener("click", () => {
         '<img src="./assests/images/contents/audio-off-svgrepo-com.svg" alt="" />';
     });
   }
-});
+}
+
+export function redirectYoutube(element) {
+  const trailer = element.target.closest(".ytLink");
+
+  if (trailer) {
+    const Link = trailer.getAttribute("data-link");
+    if (Link) {
+      window.open(Link, "_blank");
+    }
+  }
+}

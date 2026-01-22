@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="An immersive Stranger Things fan experience featuring trailers, villain backstories, and cinematic animations.">
+    <meta name="description"
+        content="An immersive Stranger Things fan experience featuring trailers, villain backstories, and cinematic animations.">
     <title>Stranger Things</title>
     <link rel="shortcut icon" href="./assests/favicon/NetflixLogo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./assests/files/CSS/loading.css" />
@@ -13,24 +14,22 @@
 </head>
 
 <body>
-     <div class="background"></div>
-    <div id="welcome" >
+    <div class="background"></div>
+    <div id="welcome">
         <video id="demogorgon" autoplay loop muted playsinline>
-    <source src="./assests/videos/Demogorgon.mp4" type="video/webm">
-    </video>
+            <source src="./assests/videos/Demogorgon.mp4" type="video/webm">
+        </video>
         <h1 id="welcomeToHawkins">Welcome to HAWKINS</h1>
-       <div class="welcomediv">
-         <span class="welcomeButton" id="visitHome">Visit Home
-            <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " 
-                alt="-->" /></span>
-        <span class="welcomeButton" id="goThrough">Go Through Animation
-            <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " 
-                alt="-->" /></span>
-       </div>
+        <div class="welcomediv">
+            <span class="welcomeButton" id="visitHome">Visit Home
+                <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " alt="-->" /></span>
+            <span class="welcomeButton" id="goThrough">Go Through Animation
+                <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " alt="-->" /></span>
+        </div>
     </div>
     <!--SS
     remove the display none when website is made-->
-    <div class="loadingScreen" >
+    <div class="loadingScreen">
         <div class="finalBackground"></div>
 
         <div class="bar top-bar"></div>
@@ -61,7 +60,7 @@
         <div class="bar bottom-bar"></div>
         -->
     </div>
-    <nav >
+    <nav>
         <img id="navLogo" src="./assests/images/contents/NetflixLogo.webp" alt="" />
         <div class="navLinks">
             <span>Home</span>
@@ -69,14 +68,12 @@
             <span>Seasons</span>
         </div>
     </nav>
-   
-    <main >
-        <section class="home" >
+
+    <main>
+        <section class="home">
             <div class="video">
                 <div class="videoBackground"></div>
-                <iframe id="player"
-                    src=""
-                    frameborder="0" allow="
+                <iframe id="player" src="" frameborder="0" allow="
               autoplay;
               fullscreen;
               picture-in-picture;
@@ -88,7 +85,7 @@
                 <div class="mainContent">
                     <img id="netflixLogo" src="./assests/images/contents/NetflixLogo.webp" alt="" />
                     <span id="strangerThings">Stranger Things</span>
-                    <span id="watchNow">Watch now</span>
+                    <span class="watchNetflix" id="watchNow">Watch now</span>
                     <span>Endless entertainment starting at ₹149</span>
                 </div>
                 <div class="controllers">
@@ -165,7 +162,7 @@
                     Dyer, and Charlie Heaton
                 </div>
             </div>
-            <div class="footerWatchNow">Watch now</div>
+            <div class="watchNetflix" id="footerWatchNow">Watch now</div>
         </section>
         <section class="about">
 
@@ -179,7 +176,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--
         add the loading js here-->
-        <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script type="module" src="./assests/files/JS/main.js"></script>
 </body>
 

@@ -1,5 +1,4 @@
-import { loadTrialers } from "./home.js";
-
+import {loadTrialers}from "./home.js"
 
 export function playIntoMusic() {
     let introAudio = document.querySelector("audio");
@@ -163,10 +162,8 @@ export function loadMainPage() {
             opacity: 1,
             duration: 2.5,
             ease: "power2.out",
-            onComplete: () => {
-                loadTrialers();
-            },
         },
         "<", 
     );
+       loadTrialers();
 }

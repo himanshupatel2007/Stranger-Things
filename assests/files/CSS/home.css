@@ -280,11 +280,11 @@
     }
 }
 
-.footerWatchNow {
+#footerWatchNow {
     bottom: 20px;
     position: sticky;
     margin: 20px auto;
-    z-index: 99;
+    z-index: 199;
     background-color: red;
     padding: 10px 15px;
     border-radius: 25px;
