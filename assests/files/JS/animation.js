@@ -27,14 +27,10 @@ Visitbutton.addEventListener("click", () => {
                         const tl = gsap.timeline();
 
                         tl.fromTo(
-                            ".letter",
+                            "#stranger span",
                             {
-                                force3D: true,
                                 opacity: 0,
-                                scale: 5,
-                                x: () => (Math.random() - 0.5) * 4000,
-                                y: () => (Math.random() - 0.5) * 4000,
-                                rotation: () => (Math.random() - 0.5) * 90,
+                                y: -100,
                             },
                             {
                                 onStart: () => {
@@ -42,21 +38,29 @@ Visitbutton.addEventListener("click", () => {
                                         console.log("audio atarted"),
                                         fadeOutIntoAudio());
                                 },
-                                color: "rgba(255, 13, 0, 0.45)",
-                                webkitTextStroke: "3px #ac1911",
+
                                 delay: 1.5,
                                 opacity: 1,
                                 scale: 1,
-                                x: 0,
                                 y: 0,
-                                rotation: 0,
-                                duration: 10,
-                                ease: "power2.out",
-                                stagger: {
-                                    amount: 1.5,
-                                    from: "random",
-                                },
+                                duration: 4,
+                                stagger: 1,
                             },
+                        );
+                        tl.fromTo(
+                            "#things span",
+                            {
+                                opacity: 0,
+                                y: 100,
+                            },
+                            {
+                                opacity: 1,
+                                scale: 1,
+                                y: 0,
+                                duration: 3.5,
+                                stagger: -1,
+                            },
+                            "<",
                         );
 
                         tl.to(
@@ -106,7 +110,6 @@ Visitbutton.addEventListener("click", () => {
                                 opacity: 0,
                                 duration: 3,
                                 ease: "power2.inOut",
-
                                 onComplete: () => {
                                     gsap.set(".loadingScreen", { display: "none" });
                                 },
@@ -135,13 +138,12 @@ Visitbutton.addEventListener("click", () => {
                             "main",
                             {
                                 opacity: 0,
-                               
                             },
                             {
                                 onComplete: () => {
                                     loadTrialers();
                                 },
-                                 display: "block",
+                                display: "block",
                                 opacity: 1,
                                 duration: 2,
                                 ease: "power2.out",

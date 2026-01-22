@@ -4,55 +4,55 @@
     "category": "trailer",
     "embedId": "https://www.youtube.com/watch?v=PssKpzB0Ah0",
     "trailerHeading": "Stranger Things 5 | Official Trailer",
-    "imagePath": "./assests/images/homePage/trailers/s5.jpg"
+    "imagePath": "./assests/images/homePage/trailers/s5.webp"
   },
   {
     "season": "Season 5",
     "category": "teaser",
     "embedId": "https://www.youtube.com/watch?v=iKZyYdwS3Wg",
     "trailerHeading": "Stranger Things 5 | Title Reveal",
-    "imagePath": "./assests/images/homePage/teasers/s5.jpg"
+    "imagePath": "./assests/images/homePage/teasers/s5.webp"
   },
   {
     "season": "Season 4",
     "category": "trailer",
     "embedId": "https://www.youtube.com/watch?v=mVsJXiI60a0",
     "trailerHeading": "Stranger Things 4 | Official Trailer",
-    "imagePath": "./assests/images/homePage/trailers/s4.jpg"
+    "imagePath": "./assests/images/homePage/trailers/s4.webp"
   },
   {
     "season": "Season 4",
     "category": "teaser",
     "embedId": "https://www.youtube.com/watch?v=oB2GYwbIAlM",
     "trailerHeading": "Stranger Things 4 | 'From Russia with love...'",
-    "imagePath": "./assests/images/homePage/teasers/s4.jpg"
+    "imagePath": "./assests/images/homePage/teasers/s4.webp"
   },
   {
     "season": "Season 3",
     "category": "trailer",
     "embedId": "https://www.youtube.com/watch?v=e4XvO7DItmc",
     "trailerHeading": "Stranger Things 3 | Official Trailer",
-    "imagePath": "./assests/images/homePage/trailers/s3.jpg"
+    "imagePath": "./assests/images/homePage/trailers/s3.webp"
   },
   {
     "season": "Season 3",
     "category": "teaser",
     "embedId": "https://www.youtube.com/watch?v=PH3kBCSfL-4",
     "trailerHeading": "Stranger Things 3 | Title Tease",
-    "imagePath": "./assests/images/homePage/teasers/s3.jpg"
+    "imagePath": "./assests/images/homePage/teasers/s3.webp"
   },
   {
     "season": "Season 2",
     "category": "trailer",
     "embedId": "https://www.youtube.com/watch?v=R1ZXOOLMJ8s",
     "trailerHeading": "Stranger Things 2 | Final Trailer",
-    "imagePath": "./assests/images/homePage/trailers/s2.jpg"
+    "imagePath": "./assests/images/homePage/trailers/s2.webp"
   },
   {
     "season": "Season 1",
     "category": "trailer",
     "embedId": "https://www.youtube.com/watch?v=b9EkMc79ZSU",
     "trailerHeading": "Stranger Things 1 | Official Trailer",
-    "imagePath": "./assests/images/homePage/trailers/s1.jpg"
+    "imagePath": "./assests/images/homePage/trailers/s1.webp"
   }
 ]
