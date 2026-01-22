@@ -35,12 +35,7 @@ export function fadeWelcomeScreen() {
 }
 
 export function loadStrangerThingsAnimation() {
-     gsap.set(".loadingScreen", {
-                    display: "flex",
-                    onComplete: () => {
-                        gsap.set("body", { overflow: "hidden" });
-                    }
-                })
+     gsap.set(".loadingScreen", {display: "flex"})
     const tl = gsap.timeline();
 
     tl.fromTo(
@@ -109,18 +104,17 @@ export function loadStrangerThingsAnimation() {
         ".background",
         {
             opacity: 1,
-            duration: 6,
+            duration: 4.5,
             ease: "power4.out",
         },
-        "<",
     );
 
     tl.to(
         ".loadingScreen,.letter,.bar",
         {
             opacity: 0,
-            duration: 4,
-            ease: "power2.inOut",
+            duration: 3,
+            ease: "power2.in",
             onComplete: () => {
                 gsap.set(".loadingScreen", { display: "none" });
             },
@@ -131,7 +125,7 @@ export function loadStrangerThingsAnimation() {
 
 export function loadMainPage() {
     const tl = gsap.timeline()
-     tl.to(
+    tl.to(
         ".background",
         {
             opacity: 1,
@@ -139,12 +133,17 @@ export function loadMainPage() {
             ease: "power4.out",
         }
     );
+    gsap.set("main",{
+        display:"block"
+    })
+    gsap.set("nav",{
+        display:"flex"
+    })
     tl.fromTo(
         "nav",
         {
-            y: -150,
+            y: -250,
             opacity: 0,
-            display: "flex", 
         },
         {delay:1,
             y: 0,
@@ -155,17 +154,18 @@ export function loadMainPage() {
     );
     tl.fromTo(
         "main",
-        { display:"block",
+        { y:50,
             opacity: 0,
         },
         {
-            onComplete: () => {
-                loadTrialers();
-            },
+            y:0,
             delay:1,
             opacity: 1,
             duration: 2.5,
             ease: "power2.out",
+            onComplete: () => {
+                loadTrialers();
+            },
         },
         "<", 
     );

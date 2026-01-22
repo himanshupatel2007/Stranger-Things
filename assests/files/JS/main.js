@@ -6,9 +6,7 @@ import {
 } from "./animation.js";
 
 window.scrollTo(0, 0);
-gsap.set("nav,main", {
-  display: "none",
-});
+
 gsap.to("#demogorgon", {
   opacity: 1,
   duration: 3,

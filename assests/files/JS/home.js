@@ -122,7 +122,8 @@ function handlePlayToggle(){
 }
 function setupVimeoPlayer() {
     const iframe = document.querySelector("#player");
-    const link = "https://player.vimeo.com/video/1156773331?background=1";
+    const link = "https://player.vimeo.com/video/1156773331?background=1&dnt=1";
+
 
     // 3. Set the source only once to avoid re-downloads
     if (!iframe.src || iframe.src === window.location.href) {
