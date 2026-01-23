@@ -1,319 +1,324 @@
 [
   {
     "season": "Season 1",
+    "poster_url": "./assests/images/seasons/posters/s1.webp",
     "episodes": [
       {
         "no": 1,
         "title": "Chapter One: The Vanishing of Will Byers",
-        "description": "On his way home from a friend's house, Will sees something terrifying.",
-        "image_url": "https://example.com/s1_e1.jpg",
+        "description": "In 1983 Indiana, young Will Byers vanishes into thin air near a high-security government laboratory. As friends, family, and local police search for answers, they are drawn into an extraordinary mystery involving top-secret government experiments and a terrifying supernatural force.",
+        "image_url": "./assests/images/seasons/s1/e1.jpg",
         "link": "https://www.netflix.com/watch/80077368"
       },
       {
         "no": 2,
         "title": "Chapter Two: The Weirdo on Maple Street",
-        "description": "Lucas, Mike and Dustin try to talk to the girl they found in the woods.",
-        "image_url": "https://example.com/s1_e2.jpg",
+        "description": "While searching for Will in the rain, Mike, Dustin, and Lucas encounter a mysterious young girl with a shaved head and a numbered tattoo. Meanwhile, Joyce receives a disturbing phone call that convinces her Will is trying to communicate, and Nancy begins to worry about her missing friend Barb.",
+        "image_url": "./assests/images/seasons/s1/e2.jpg",
         "link": "https://www.netflix.com/watch/80077369"
       },
       {
         "no": 3,
         "title": "Chapter Three: Holly, Jolly",
-        "description": "An increasingly concerned Nancy looks for Barb and finds out what Jonathan has been up to.",
-        "image_url": "https://example.com/s1_e3.jpg",
+        "description": "Joyce becomes obsessed with using Christmas lights to talk to Will, believing he is trapped in a different dimension. An increasingly concerned Nancy looks for Barb and finds out what Jonathan has been up to with his camera, leading to a discovery that challenges everything they know about the town.",
+        "image_url": "./assests/images/seasons/s1/e3.jpg",
         "link": "https://www.netflix.com/watch/80077370"
       },
       {
         "no": 4,
         "title": "Chapter Four: The Body",
-        "description": "Refusing to believe Will is dead, Joyce tries to connect with her son.",
-        "image_url": "https://example.com/s1_e4.jpg",
+        "description": "The town is rocked by the discovery of a body in the local quarry, but Joyce refuses to believe Will is dead, claiming she saw him in the walls of her house. The boys use a walkie-talkie to help Eleven channel her powers, leading to a shocking audio transmission that gives them hope.",
+        "image_url": "./assests/images/seasons/s1/e4.jpg",
         "link": "https://www.netflix.com/watch/80077371"
       },
       {
         "no": 5,
         "title": "Chapter Five: The Flea and the Acrobat",
-        "description": "Hopper breaks into the lab while Dustin and Lucas find the 'gate'.",
-        "image_url": "https://example.com/s1_e5.jpg",
+        "description": "Hopper risks everything to break into the Hawkins Laboratory, searching for proof of a cover-up. Meanwhile, the boys consult their science teacher about theoretical dimensions while Dustin and Lucas find the 'gate', but a rift between the friends threatens to tear the group apart.",
+        "image_url": "./assests/images/seasons/s1/e5.jpg",
         "link": "https://www.netflix.com/watch/80077372"
       },
       {
         "no": 6,
         "title": "Chapter Six: The Monster",
-        "description": "Jonathan looks for Nancy in the darkness, but Steve is looking for her too.",
-        "image_url": "https://example.com/s1_e6.jpg",
+        "description": "Eleven struggles with the guilt of her past in the lab as she flees from the boys. Jonathan looks for Nancy in the darkness after she vanishes through a portal in a tree, but Steve is looking for her too, leading to a violent confrontation in the center of town.",
+        "image_url": "./assests/images/seasons/s1/e6.jpg",
         "link": "https://www.netflix.com/watch/80077373"
       },
       {
         "no": 7,
         "title": "Chapter Seven: The Bathtub",
-        "description": "Eleven helps the boys find Will while government agents get closer.",
-        "image_url": "https://example.com/s1_e7.jpg",
+        "description": "Government agents close in on Mike's house, forcing a high-stakes bike chase through Hawkins. Eleven uses her telekinesis to protect the group and then helps the boys find Will's location by constructing a makeshift sensory deprivation tank in the school gymnasium.",
+        "image_url": "./assests/images/seasons/s1/e7.jpg",
         "link": "https://www.netflix.com/watch/80077374"
       },
       {
         "no": 8,
         "title": "Chapter Eight: The Upside Down",
-        "description": "Hopper and Joyce enter the portal to save Will. A final showdown occurs at the school.",
-        "image_url": "https://example.com/s1_e8.jpg",
+        "description": "Hopper and Joyce make a desperate deal with Dr. Brenner to enter the portal and save Will from the Demogorgon's lair. As the boys protect Eleven at the school, a final showdown occurs that requires a massive sacrifice to stop the monster and close the gate once and for all.",
+        "image_url": "./assests/images/seasons/s1/e8.jpg",
         "link": "https://www.netflix.com/watch/80077375"
       }
     ]
   },
   {
     "season": "Season 2",
+    "poster_url": "./assests/images/seasons/posters/s2.webp",
     "episodes": [
       {
         "no": 1,
         "title": "Chapter One: MADMAX",
-        "description": "As the town prepares for Halloween, a high-score seeker shakes up things at the arcade.",
-        "image_url": "https://example.com/s2_e1.jpg",
+        "description": "A year after Will's return, the group is fascinated by a new girl at the arcade who beats Dustin's high score. Will experiences 'episodes' of seeing a massive shadow monster in the sky, while a mysterious group of outcasts with powers commits a robbery in Pittsburgh.",
+        "image_url": "./assests/images/seasons/s2/e1.jpg",
         "link": "https://www.netflix.com/watch/80117715"
       },
       {
         "no": 2,
         "title": "Chapter Two: Trick or Treat, Freak",
-        "description": "After a terrifying night, Will keeps things to himself. Dustin finds a strange new pet.",
-        "image_url": "https://example.com/s2_e2.jpg",
+        "description": "On Halloween night, Will's visions grow more intense, blurring the lines between reality and the Upside Down. Dustin finds a strange, slug-like creature in his trash can and decides to keep it as a pet, unaware of its dangerous origin and rapid growth potential.",
+        "image_url": "./assests/images/seasons/s2/e2.jpg",
         "link": "https://www.netflix.com/watch/80117716"
       },
       {
         "no": 3,
         "title": "Chapter Three: The Pollywog",
-        "description": "Dustin adopts a new friend. Eleven grows impatient in the cabin.",
-        "image_url": "https://example.com/s2_e3.jpg",
+        "description": "Dustin names his new pet D'Artagnan, but Will realizes the creature is from the other side. Eleven grows impatient living in secrecy in Hopper's cabin and risks being seen by venturing out to find Mike, while Nancy and Jonathan plan to expose the truth about Barb.",
+        "image_url": "./assests/images/seasons/s2/e3.jpg",
         "link": "https://www.netflix.com/watch/80117717"
       },
       {
         "no": 4,
         "title": "Chapter Four: Will the Wise",
-        "description": "Will opens up to Joyce. Hopper digs for the truth about the rotting pumpkins.",
-        "image_url": "https://example.com/s2_e4.jpg",
+        "description": "Will tells Joyce about the Shadow Monster's influence over him, leading her to realize his drawings are actually a map of something beneath the town. Hopper discovers a massive network of tunnels filled with toxic vines, while Eleven finds her mother's records in the lab files.",
+        "image_url": "./assests/images/seasons/s2/e4.jpg",
         "link": "https://www.netflix.com/watch/80117718"
       },
       {
         "no": 5,
         "title": "Chapter Five: Dig Dug",
-        "description": "Nancy and Jonathan swap conspiracy theories with a new ally. Bob solves a puzzle.",
-        "image_url": "https://example.com/s2_e5.jpg",
+        "description": "Nancy and Jonathan meet an eccentric private investigator and share their evidence of the lab's cover-up. Bob Newby, Joyce's new boyfriend, uses his puzzle-solving skills to help map out Will's drawings, leading to a desperate rescue mission to save Hopper from the underground tunnels.",
+        "image_url": "./assests/images/seasons/s2/e5.jpg",
         "link": "https://www.netflix.com/watch/80117719"
       },
       {
         "no": 6,
         "title": "Chapter Six: The Spy",
-        "description": "Will’s connection to the shadow monster grows stronger. Steve and Dustin bond.",
-        "image_url": "https://example.com/s2_e6.jpg",
+        "description": "The lab's scientists discover that Will has a 'true sight' connection to the monster, but the monster begins using Will as a spy to lure the soldiers into a trap. Dustin and Steve bond while hunting the growing Demodogs, forming an unlikely but heroic partnership.",
+        "image_url": "./assests/images/seasons/s2/e6.jpg",
         "link": "https://www.netflix.com/watch/80117720"
       },
       {
         "no": 7,
         "title": "Chapter Seven: The Lost Sister",
-        "description": "Eleven’s journey of self-discovery leads her to a band of outcasts in Chicago.",
-        "image_url": "https://example.com/s2_e7.jpg",
+        "description": "Eleven travels to Chicago to find Kali, another test subject from the Hawkins Lab with the power to create illusions. She joins Kali's gang of misfits as they hunt down the people who tortured them, but she must ultimately choose between revenge and saving her friends back home.",
+        "image_url": "./assests/images/seasons/s2/e7.jpg",
         "link": "https://www.netflix.com/watch/80117721"
       },
       {
         "no": 8,
         "title": "Chapter Eight: The Mind Flayer",
-        "description": "An unlikely hero steps up when the lab goes into lockdown.",
-        "image_url": "https://example.com/s2_e8.jpg",
+        "description": "The Hawkins Lab goes into emergency lockdown as a pack of Demodogs breaches the facility. With the power out and everyone trapped, Bob Newby volunteers for a dangerous mission to reset the breakers, while the group realizes that Will is host to a virus controlled by the Mind Flayer.",
+        "image_url": "./assests/images/seasons/s2/e8.jpg",
         "link": "https://www.netflix.com/watch/80117722"
       },
       {
         "no": 9,
         "title": "Chapter Nine: The Gate",
-        "description": "Eleven makes a plan to finish what she started. The kids head into the tunnels.",
-        "image_url": "https://example.com/s2_e9.jpg",
+        "description": "Eleven returns to Hawkins for a massive reunion and prepares to use her full power to close the giant rift in the lab. While Joyce and Jonathan work to 'exorcise' the Mind Flayer from Will, the kids venture into the tunnels to create a distraction and draw the monsters away.",
+        "image_url": "./assests/images/seasons/s2/e9.jpg",
         "link": "https://www.netflix.com/watch/80117723"
       }
     ]
   },
   {
     "season": "Season 3",
+    "poster_url": "./assests/images/seasons/posters/s3.webp",
     "episodes": [
       {
         "no": 1,
         "title": "Chapter One: Suzie, Do You Copy?",
-        "description": "Summer in Hawkins brings a new mall and new monsters.",
-        "image_url": "https://example.com/s3_e1.jpg",
+        "description": "It's the summer of 1985 and the new Starcourt Mall has become the hub of town. Dustin returns from camp with a high-powered radio and accidentally intercepts a secret Russian transmission, while Billy is involved in a mysterious car accident that leads him to a dark encounter.",
+        "image_url": "./assests/images/seasons/s3/e1.jpg",
         "link": "https://www.netflix.com/watch/80222779"
       },
       {
         "no": 2,
         "title": "Chapter Two: The Mall Rats",
-        "description": "Nancy and Jonathan follow a lead. Eleven and Max go on a shopping spree.",
-        "image_url": "https://example.com/s3_e2.jpg",
+        "description": "Nancy and Jonathan investigate a lead about rabid rats, unaware of the growing threat. Eleven and Max spend a day at the mall to forget their boy troubles, and Steve and Robin enlist Dustin to help them decode the Russian message, leading them to a startling realization about the mall's basement.",
+        "image_url": "./assests/images/seasons/s3/e2.jpg",
         "link": "https://www.netflix.com/watch/80222780"
       },
       {
         "no": 3,
         "title": "Chapter Three: The Case of the Missing Lifeguard",
-        "description": "With El and Max on the hunt for Billy, Will declares a day without girls.",
-        "image_url": "https://example.com/s3_e3.jpg",
+        "description": "Eleven uses her powers to spy on Billy and discovers he is acting strangely, leading her and Max to investigate a missing lifeguard. Will feels left behind as his friends obsess over romance, leading him to sense that the Mind Flayer has returned to Hawkins in a new, physical form.",
+        "image_url": "./assests/images/seasons/s3/e3.jpg",
         "link": "https://www.netflix.com/watch/80222781"
       },
       {
         "no": 4,
         "title": "Chapter Four: The Sauna Test",
-        "description": "A code red brings the gang together to face a frighteningly familiar evil.",
-        "image_url": "https://example.com/s3_e4.jpg",
+        "description": "The group reunites and develops a plan to confirm if Billy is 'flayed' by trapping him in the community pool's sauna. Meanwhile, Dustin, Steve, and Robin find a way into the secret Russian facility with the help of Lucas's sister Erica, uncovering a massive underground operation.",
+        "image_url": "./assests/images/seasons/s3/e4.jpg",
         "link": "https://www.netflix.com/watch/80222782"
       },
       {
         "no": 5,
         "title": "Chapter Five: The Flayed",
-        "description": "Panic hits the hospital. Back at the mall, Steve and Robin discover a secret.",
-        "image_url": "https://example.com/s3_e5.jpg",
+        "description": "Hopper and Joyce track a lead to a secret lab and capture a Russian scientist named Alexei. Back at the hospital, Nancy and Jonathan face off against a terrifying, fleshy monster made of the town's residents, while Eleven realizes the Mind Flayer is building an army to destroy her.",
+        "image_url": "./assests/images/seasons/s3/e5.jpg",
         "link": "https://www.netflix.com/watch/80222783"
       },
       {
         "no": 6,
         "title": "Chapter Six: E Pluribus Unum",
-        "description": "Dr. Alexei reveals what the Russians have been building.",
-        "image_url": "https://example.com/s3_e6.jpg",
+        "description": "Eleven uses her powers to enter Billy's mind, witnessing his traumatic past and discovering the Mind Flayer's ultimate plan. Dustin and Erica must rescue Steve and Robin from Russian interrogation, while Hopper and Joyce try to navigate the corrupt town politics to reach the gate.",
+        "image_url": "./assests/images/seasons/s3/e6.jpg",
         "link": "https://www.netflix.com/watch/80222784"
       },
       {
         "no": 7,
         "title": "Chapter Seven: The Bite",
-        "description": "Time is running out as an assassin closes in. The Mind Flayer attacks.",
-        "image_url": "https://example.com/s3_e7.jpg",
+        "description": "With the Mind Flayer's monster growing to a massive size, the group hides at the mall while being hunted by an elite Russian assassin. Eleven suffers a serious injury during a battle at Hopper's cabin, and the group realizes they must destroy the Russian machine to stop the monster.",
+        "image_url": "./assests/images/seasons/s3/e7.jpg",
         "link": "https://www.netflix.com/watch/80222785"
       },
       {
         "no": 8,
         "title": "Chapter Eight: The Battle of Starcourt",
-        "description": "Terror reigns in the food court as the gang faces their biggest threat yet.",
-        "image_url": "https://example.com/s3_e8.jpg",
+        "description": "In a climactic finale, the entire group converges on Starcourt Mall for a final stand against the Mind Flayer. Hopper and Joyce descend into the Russian base to close the gate, leading to a heart-wrenching sacrifice that changes the lives of everyone in Hawkins forever.",
+        "image_url": "./assests/images/seasons/s3/e8.jpg",
         "link": "https://www.netflix.com/watch/80222786"
       }
     ]
   },
   {
     "season": "Season 4",
+    "poster_url": "./assests/images/seasons/posters/s4.webp",
     "episodes": [
       {
         "no": 1,
         "title": "Chapter One: The Hellfire Club",
-        "description": "D&D at high school gets real when a new threat strikes Hawkins.",
-        "image_url": "https://example.com/s4_e1.jpg",
+        "description": "Six months after the Battle of Starcourt, the group is split between Hawkins and California. A new, terrifying entity named Vecna begins targeting high school students in Hawkins, while the kids navigate the social pressures of high school and the upcoming D&D championship.",
+        "image_url": "./assests/images/seasons/s4/e1.jpg",
         "link": "https://www.netflix.com/watch/81155691"
       },
       {
         "no": 2,
         "title": "Chapter Two: Vecna's Curse",
-        "description": "A terrifying death shakes the town. Max explores her trauma.",
-        "image_url": "https://example.com/s4_e2.jpg",
+        "description": "After a gruesome death at Eddie Munson's trailer, the town descends into panic. Nancy and Fred investigate the crime scene for the school paper, while Eleven struggles with being bullied in California and the loss of her powers, leading to a public outburst that attracts government attention.",
+        "image_url": "./assests/images/seasons/s4/e2.jpg",
         "link": "https://www.netflix.com/watch/81155692"
       },
       {
         "no": 3,
         "title": "Chapter Three: The Monster and the Superhero",
-        "description": "Eleven is taken. Dustin and the crew hunt for a gateway.",
-        "image_url": "https://example.com/s4_e3.jpg",
+        "description": "Dr. Owens arrives in California to convince Eleven that only she can save Hawkins from the new threat. In Hawkins, the group searches for Eddie to protect him from a vigilante mob, and Joyce receives a mysterious package from Russia that suggests Hopper might still be alive.",
+        "image_url": "./assests/images/seasons/s4/e3.jpg",
         "link": "https://www.netflix.com/watch/81155693"
       },
       {
         "no": 4,
         "title": "Chapter Four: Dear Billy",
-        "description": "Max is running out of time. Hopper fights for his life in Russia.",
-        "image_url": "https://example.com/s4_e4.jpg",
+        "description": "Max realizes she is Vecna's next target and prepares for the worst by writing letters to her friends. The group discovers the power of music as a lifeline to reality, leading to a desperate race against time to save Max from Vecna's mind palace at the Hawkins cemetery.",
+        "image_url": "./assests/images/seasons/s4/e4.jpg",
         "link": "https://www.netflix.com/watch/81155694"
       },
       {
         "no": 5,
         "title": "Chapter Five: The Nina Project",
-        "description": "Eleven faces her past to reclaim her future. The kids find a way in.",
-        "image_url": "https://example.com/s4_e5.jpg",
+        "description": "Eleven undergoes a dangerous procedure to regain her powers by revisiting her repressed memories of the Hawkins Lab. In Russia, Hopper attempts a daring escape from the gulag, while the kids in Hawkins discover a 'water gate' at the bottom of Lover's Lake.",
+        "image_url": "./assests/images/seasons/s4/e5.jpg",
         "link": "https://www.netflix.com/watch/81155695"
       },
       {
         "no": 6,
         "title": "Chapter Six: The Dive",
-        "description": "Steve takes a plunge. Eleven finds her way back to 1979.",
-        "image_url": "https://example.com/s4_e6.jpg",
+        "description": "Steve, Nancy, Robin, and Eddie are pulled into the Upside Down after discovering the underwater portal. Eleven continues to explore her history with a mysterious lab orderly, and Mike's group in California enlists the help of a computer hacker named Suzie to find Eleven's location.",
+        "image_url": "./assests/images/seasons/s4/e6.jpg",
         "link": "https://www.netflix.com/watch/81155696"
       },
       {
         "no": 7,
         "title": "Chapter Seven: The Massacre at Hawkins Lab",
-        "description": "The origins of Henry Creel are revealed in a shocking confrontation.",
-        "image_url": "https://example.com/s4_e7.jpg",
+        "description": "In a series of shocking revelations, Eleven remembers the truth about the 1979 lab massacre. The orderly's true identity is revealed as Henry Creel, the first test subject, and the group realizes that Vecna's origins are deeply tied to Eleven's own past and the creation of the Upside Down.",
+        "image_url": "./assests/images/seasons/s4/e7.jpg",
         "link": "https://www.netflix.com/watch/81155697"
       },
       {
         "no": 8,
         "title": "Chapter Eight: Papa",
-        "description": "As the military moves in, Eleven prepares to leave the nest.",
-        "image_url": "https://example.com/s4_e8.jpg",
+        "description": "As government forces invade the secret bunker, Eleven must make a choice between her 'papa' and her friends. The Hawkins group prepares for a multi-stage assault on Vecna, realizing they must enter the Upside Down once again to destroy him before the final gate opens.",
+        "image_url": "./assests/images/seasons/s4/e8.jpg",
         "link": "https://www.netflix.com/watch/81155698"
       },
       {
         "no": 9,
         "title": "Chapter Nine: The Piggyback",
-        "description": "The group enters the Upside Down for a multi-front assault on Vecna.",
-        "image_url": "https://example.com/s4_e9.jpg",
+        "description": "The epic two-hour season finale sees the group launch a coordinated attack on Vecna across three dimensions. While Eddie makes a heroic stand, Eleven engages in a telepathic battle to save Max, resulting in a massive fracture that begins to tear Hawkins apart as the Upside Down bleeds into reality.",
+        "image_url": "./assests/images/seasons/s4/e9.jpg",
         "link": "https://www.netflix.com/watch/81155699"
       }
     ]
   },
   {
     "season": "Season 5",
+    "poster_url": "./assests/images/seasons/posters/s5.webp",
     "episodes": [
       {
         "no": 1,
         "title": "Chapter One: The Crawl",
-        "description": "The battle for Hawkins officially begins as reality starts to fracture.",
-        "image_url": "https://example.com/s5_e1.jpg",
+        "description": "Hawkins has become a war zone as the giant rifts continue to expand across the town. The group reunites in the wreckage of their home to plan a final offensive, while Eleven realizes her connection to Vecna is stronger than ever as he begins his final 'crawl' toward our world.",
+        "image_url": "./assests/images/seasons/s5/e1.jpg",
         "link": "https://www.netflix.com/title/80057281"
       },
       {
         "no": 2,
         "title": "Chapter Two: The Vanishing of Holly Wheeler",
-        "description": "A new mystery arises when a familiar face goes missing in the chaos.",
-        "image_url": "https://example.com/s5_e2.jpg",
+        "description": "Tensions rise as the town is evacuated and more citizens go missing, including Mike's younger sister. The group must navigate a distorted version of Hawkins that is merging with the Upside Down, discovering that Vecna is using the town's history to fuel his power.",
+        "image_url": "./assests/images/seasons/s5/e2.jpg",
         "link": "https://www.netflix.com/title/80057281"
       },
       {
         "no": 3,
         "title": "Chapter Three: The Turnbow Trap",
-        "description": "The group sets a trap for a beast that has crossed over into our world.",
-        "image_url": "https://example.com/s5_e3.jpg",
+        "description": "Dustin and Lucas devise a clever trap using local knowledge to capture one of Vecna's scouts. Meanwhile, Hopper and Joyce lead a group of survivors through the dangerous woods, uncovering a hidden Russian base that may hold the key to neutralizing the Mind Flayer's influence.",
+        "image_url": "./assests/images/seasons/s5/e3.jpg",
         "link": "https://www.netflix.com/title/80057281"
       },
       {
         "no": 4,
         "title": "Chapter Four: Sorcerer",
-        "description": "Will discovers a hidden power within himself that connects him to the Mind Flayer.",
-        "image_url": "https://example.com/s5_e4.jpg",
+        "description": "Will discovers that his long-standing connection to the Upside Down has granted him unique abilities to track Vecna's movements. Eleven mentors him in controlling this power, realizing that Will may be the only 'sorcerer' capable of navigating the Mind Flayer's complex mental hive-mind.",
+        "image_url": "./assests/images/seasons/s5/e4.jpg",
         "link": "https://www.netflix.com/title/80057281"
       },
       {
         "no": 5,
         "title": "Chapter Five: Shock Jock",
-        "description": "The group uses the airwaves to find the lost kids of Hawkins.",
-        "image_url": "https://example.com/s5_e5.jpg",
+        "description": "Robin and Steve take over the local radio station to coordinate the town's resistance and broadcast hope to those trapped. They discover a way to use specific frequencies to disrupt the monsters' communication, leading to a high-stakes defense of the radio tower.",
+        "image_url": "./assests/images/seasons/s5/e5.jpg",
         "link": "https://www.netflix.com/title/80057281"
       },
       {
         "no": 6,
         "title": "Chapter Six: Escape from Camazotz",
-        "description": "A daring rescue mission takes place in the heart of the Upside Down.",
-        "image_url": "https://example.com/s5_e6.jpg",
+        "description": "Nancy leads a daring infiltration into the heart of the shadow realm to retrieve a powerful artifact. The group faces their deepest fears in a psychological labyrinth created by Vecna, testing their bonds and forcing them to confront the traumas they've carried since the beginning.",
+        "image_url": "./assests/images/seasons/s5/e6.jpg",
         "link": "https://www.netflix.com/title/80057281"
       },
       {
         "no": 7,
         "title": "Chapter Seven: The Bridge",
-        "description": "The ultimate connection between Eleven and Vecna is finally revealed.",
-        "image_url": "https://example.com/s5_e7.jpg",
+        "description": "Eleven and Vecna meet on a mental 'bridge' between worlds for a final negotiation that reveals the true purpose of the Upside Down. The group realizes that the only way to save Hawkins is to bridge the gap between science and the supernatural once and for all.",
+        "image_url": "./assests/images/seasons/s5/e7.jpg",
         "link": "https://www.netflix.com/title/80057281"
       },
       {
         "no": 8,
         "title": "Chapter Eight: The Rightside Up",
-        "description": "The world stands still as the gateway is finally addressed for the last time.",
-        "image_url": "https://example.com/s5_e8.jpg",
+        "description": "In the series finale, the rifts begin to close as the group executes a final, massive plan to sever Vecna's connection to the world. Life in Hawkins will never be the same as the survivors look toward a future where the shadows are finally pushed back into the 'rightside up'.",
+        "image_url": "./assests/images/seasons/s5/e8.jpg",
         "link": "https://www.netflix.com/title/80057281"
       }
     ]

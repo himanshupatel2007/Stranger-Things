@@ -5,19 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="An immersive Stranger Things fan experience featuring trailers, villain backstories, and cinematic animations.">
+        content="An immersive Stranger Things fan experience featuring trailers, villain backstories, and cinematic animations." />
     <title>Stranger Things</title>
     <link rel="shortcut icon" href="./assests/favicon/NetflixLogo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./assests/files/CSS/loading.css" />
     <link rel="stylesheet" href="/assests/files/CSS/home.css" />
     <link rel="stylesheet" href="./assests/files/CSS/global.css" />
+    <link rel="stylesheet" href="./assests/files/CSS/seasons.css">
+
 </head>
 
 <body>
+
     <div class="background"></div>
     <div id="welcome">
         <video id="demogorgon" autoplay loop muted playsinline>
-            <source src="./assests/videos/Demogorgon.mp4" type="video/webm">
+            <source src="./assests/videos/Demogorgon.mp4" type="video/webm" />
         </video>
         <h1 id="welcomeToHawkins">Welcome to HAWKINS</h1>
         <div class="welcomediv">
@@ -27,8 +30,7 @@
                 <img src="./assests/images/contents/right-arrow-svgrepo-com.svg  " alt="-->" /></span>
         </div>
     </div>
-    <!--SS
-    remove the display none when website is made-->
+
     <div class="loadingScreen">
         <div class="finalBackground"></div>
 
@@ -56,9 +58,6 @@
             <span class="bottom-bar"></span>
         </h1>
 
-        <!-- 
-        <div class="bar bottom-bar"></div>
-        -->
     </div>
     <nav>
         <img id="navLogo" src="./assests/images/contents/NetflixLogo.webp" alt="" />
@@ -70,7 +69,7 @@
     </nav>
 
     <main>
-        <section class="home">
+        <section class="home" style="display: none;">
             <div class="video">
                 <div class="videoBackground"></div>
                 <iframe id="player" src="" frameborder="0" allow="
@@ -124,8 +123,7 @@
                 <div class="prev Trailer">
                     <img src="./assests/images/contents/previous-svgrepo-com.svg" alt="<" />
                 </div>
-                <div class="trailerContainer">
-                </div>
+                <div class="trailerContainer"></div>
                 <div class="next Trailer">
                     <img src="./assests/images/contents/next-svgrepo-com.svg" alt=">" />
                 </div>
@@ -164,19 +162,44 @@
             </div>
             <div class="watchNetflix" id="footerWatchNow">Watch now</div>
         </section>
-        <section class="about">
-
+        <section class="about"></section>
+        <section class="seasons"  style="display: none;">
+           
+            <div class="tablePoster">
+                <div class="ratingTable">
+                </div>
+                <div class="posters">
+                </div>
+            </div>
+            <div class="seasonsHeading">
+                <div class="heading">
+                    <h1>Episodes</h1>
+                    <p>strangerThings : <span>U/A 16+</span> gore, tobacco use</p>
+                </div>
+                <div class="seasonsDropdown">
+                    <button class="selected">strangerThings <img style="height: 25px;filter: invert(1);"
+                            src="./assests/images/contents/down-arrow-5-svgrepo-com.svg" alt=""></button>
+                    <div class="dropdown">
+                        <button onclick=loadSeasons(0)>strangerThings</button>
+                        <button onclick=loadSeasons(1)>strangerThings 2</button>
+                        <button onclick=loadSeasons(2)>strangerThings 3</button>
+                        <button onclick=loadSeasons(3)>strangerThings 4</button>
+                        <button onclick=loadSeasons(4)>strangerThings 5</button>
+                    </div>
+                </div>
+            </div>
+            <div class="seasonsContainer">
+            </div>
         </section>
-        <section class="seasons"></section>
     </main>
     <audio src="./assests/strangerthings_theme.mp3" type="audio/mpeg"></audio>
     <footer></footer>
+    <!--
+    -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!--
-        add the loading js here-->
-    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="./assests/files/JS/seasons.js"></script>
     <script type="module" src="./assests/files/JS/main.js"></script>
 </body>
 

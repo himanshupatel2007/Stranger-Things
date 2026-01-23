@@ -25,6 +25,7 @@ export function fadeWelcomeScreen() {
     gsap.to("#welcome", {
         opacity: 0,
         duration: 3.5,
+   ease: "power1.inOut",
         onComplete: () => {
             gsap.set("#welcome", {
                 display: "none",
@@ -148,8 +149,8 @@ export function loadMainPage() {
             y: 0,
             opacity: 1,
             duration: 1.5,
-            ease: "power4.out",
-        },"-=1"
+            ease: "power2.out",
+        },"-=2"
     );
     tl.fromTo(
         "main",
@@ -158,7 +159,6 @@ export function loadMainPage() {
         },
         {
             y:0,
-            delay:1,
             opacity: 1,
             duration: 2.5,
             ease: "power2.out",
@@ -166,4 +166,10 @@ export function loadMainPage() {
         "<", 
     );
        loadTrialers();
+}
+
+export function disableStrangerThingsAnimation(){
+    gsap.set(".loadingScreen",{
+        display:"none"
+    })
 }

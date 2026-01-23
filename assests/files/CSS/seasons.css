@@ -1,0 +1,181 @@
+.seasons {
+    min-width: 1200px;
+    color: white;
+    z-index: 99;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#ratings {
+    margin: 30px auto;
+}
+
+.posters {
+    margin: 0 auto;
+}
+
+.tablePoster {
+    width: 85%;
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.seasonsHeading {
+    padding: 10px 10px 10px 0;
+    width: 85%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+.posters p{
+    text-align: center;
+}
+.posters img{
+    width: 350px;
+    height: auto;
+    transition: transform 0.8s ease-in-out;
+    backface-visibility: visible;
+}
+.posters:hover img {
+    transform: rotateZ(180deg) scale(1.1); 
+    filter: hue-rotate(180deg) brightness(0.7); 
+}
+.seasonsContainer {
+    width: 75%;
+    position: relative;
+    padding: 15px;
+    margin: 10px auto;
+    background-color: rgba(0, 0, 0, 0.171);
+    
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ratingTable table {
+    width: auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin: 0;
+}
+
+.seasonsDropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.345);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    z-index: 101;
+    margin-right: 20px;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.345);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    z-index: 100;
+    display: none;
+}
+
+.dropdown button {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-align: left;
+    cursor: pointer;
+}
+.seasonsDropdown:hover .dropdown{
+    display: flex;
+}
+.dropdown button:hover {
+    background: #ffffff29;
+}
+
+.episodes {
+    padding: 15px 10px 25px 10px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.458);
+align-items: center;
+
+
+}
+
+.episodes h1 {
+    text-align: center;;
+    padding: 0 20px;
+}
+
+.episodes img {
+    width: 280px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.episodes div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.ratingTable th,
+.ratingTable td {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    vertical-align: center;
+    aspect-ratio: 1/1;
+    text-align: center;
+    display: table-cell;
+}
+.ratingTable td:hover {
+    box-shadow: 0 0 15px #000000;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.darkred {
+    background-color: #8b0000;
+}
+
+.deepred {
+    background-color: #330000;
+}
