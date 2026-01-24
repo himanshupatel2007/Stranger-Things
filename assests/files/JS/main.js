@@ -6,7 +6,8 @@ import {
     disableStrangerThingsAnimation
 } from "./animation.js";
 
-import { playVideo, mutevideo, redirectYoutube, watchNow } from "./home.js"
+import { playVideo, mutevideo, redirectYoutube, watchNow,fadeHome } from "./home.js"
+import {loadEpisodes,createRatingsTable,fadeSeasons} from "./seasons.js"
 
 if('scrollRestoration' in history){
     history.scrollRestoration = 'manual'
@@ -14,10 +15,13 @@ if('scrollRestoration' in history){
 
 window.addEventListener("load",()=>{
     window.scrollTo(0, 0);
+    gasp.set(".loadingScreen,nav,main,.home,.seasons",{
+        display:"none"
+    })
 })
 
-
 const hasSeenIntro = sessionStorage.getItem("hasSeen");
+
 if (hasSeenIntro) {
         gsap.set("#welcome,.loadingScreen", {
             display: "none"
@@ -54,6 +58,55 @@ goThroughAnimation.addEventListener(
 
     }
 );
+
+const loadHome = document.querySelector("#loadHome")
+const loadSeason = document.querySelector("#loadSeasons")
+
+loadHome.addEventListener("click",()=>{
+    fadeSeasons()
+   gsap.set(".home", { display: "block", opacity: 0 });
+    gsap.to(".home", { opacity: 1, duration: 1.5, delay: 0.5 });
+    gsap.fromTo(
+            ".background",{
+                opacity:0
+            },
+            {onStart:()=>{
+                gsap.set(".background",{
+                    backgroundImage: 'url("./assests/images/homePage/home.webp")'
+                })
+            },delay:0.5,
+                opacity: 1,
+                duration: 2.5,
+                ease: "power2.out",
+            }
+        );
+    loadMainPage();
+})
+loadSeason.addEventListener("click",()=>{
+    fadeHome()
+   gsap.set(".seasons", { display: "block", opacity: 0 }); 
+    gsap.to(".seasons", { opacity: 1, duration: 1.5, delay: 0.5 });
+      gsap.fromTo(
+            ".background",{
+                opacity:0
+            },
+            {onStart:()=>{
+                gsap.set(".background",{
+                    backgroundImage: 'url("./assests/images/seasons/seasonsBackground.webp")'
+                })
+            },delay:0.5,
+                opacity: 1,
+                duration: 2.5,
+                ease: "power2.out",
+            }
+        );
+        createRatingsTable()
+        loadEpisodes(0)
+    loadMainPage();
+})
+
+
+
 
 document.querySelector("#playBtn").addEventListener("click", () => playVideo())
 document.querySelector("#muteBtn").addEventListener("click", () => mutevideo())

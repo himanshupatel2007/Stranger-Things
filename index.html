@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/assests/files/CSS/home.css" />
     <link rel="stylesheet" href="./assests/files/CSS/global.css" />
     <link rel="stylesheet" href="./assests/files/CSS/seasons.css">
+    <link rel="stylesheet" href="./assests/files/CSS/about.css">
 
 </head>
 
@@ -62,14 +63,14 @@
     <nav>
         <img id="navLogo" src="./assests/images/contents/NetflixLogo.webp" alt="" />
         <div class="navLinks">
-            <span>Home</span>
-            <span>About</span>
-            <span>Seasons</span>
+            <span id="loadHome">Home</span>
+            <span id="loadAbout">About</span>
+            <span id="loadSeasons">Seasons</span>
         </div>
     </nav>
 
     <main>
-        <section class="home" style="display: none;">
+        <section class="home">
             <div class="video">
                 <div class="videoBackground"></div>
                 <iframe id="player" src="" frameborder="0" allow="
@@ -162,9 +163,10 @@
             </div>
             <div class="watchNetflix" id="footerWatchNow">Watch now</div>
         </section>
-        <section class="about"></section>
-        <section class="seasons"  style="display: none;">
-           
+        <section class="about">
+        </section>
+        <section class="seasons">
+
             <div class="tablePoster">
                 <div class="ratingTable">
                 </div>
@@ -180,11 +182,11 @@
                     <button class="selected">strangerThings <img style="height: 25px;filter: invert(1);"
                             src="./assests/images/contents/down-arrow-5-svgrepo-com.svg" alt=""></button>
                     <div class="dropdown">
-                        <button onclick=loadSeasons(0)>strangerThings</button>
-                        <button onclick=loadSeasons(1)>strangerThings 2</button>
-                        <button onclick=loadSeasons(2)>strangerThings 3</button>
-                        <button onclick=loadSeasons(3)>strangerThings 4</button>
-                        <button onclick=loadSeasons(4)>strangerThings 5</button>
+                        <div class="seasonsSelectors" id="0">strangerThings</div>
+                        <div class="seasonsSelectors" id="1">strangerThings 2</div>
+                        <div class="seasonsSelectors" id="2">strangerThings 3</div>
+                        <div class="seasonsSelectors" id="3">strangerThings 4</div>
+                        <div class="seasonsSelectors" id="4">strangerThings 5</div>
                     </div>
                 </div>
             </div>
@@ -199,7 +201,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assests/files/JS/seasons.js"></script>
     <script type="module" src="./assests/files/JS/main.js"></script>
 </body>
 

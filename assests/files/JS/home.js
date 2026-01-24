@@ -5,11 +5,17 @@ export async function loadTrialers() {
     let trailersContainer = document.querySelector(".trailerContainer");
     trailersContainer.innerHTML = "";
     data.forEach((item) => {
-      let element = ` <div class="trailers">
-                        <div class="ytLink" data-link="${item.link}"  style="background-image: url(${item.imagePath});"></div>
-                        <div style="opacity: 70%;text-transform: capitalize;" >${item.category}</div>
-                        <p>${item.trailerHeading}</p>
-                    </div>`;
+      let element = `
+    <div class="trailers">
+        <div class="media-container">
+            <div class="ytLink" data-link="${item.link}" style="background-image: url(${item.imagePath});"></div>
+            <div class="hover-overlay">
+                <img src="./assests/images/contents/play-circle-svgrepo-com.svg" class="overlay-icon">
+            </div>
+        </div>
+        <div style="opacity: 70%; text-transform: capitalize;">${item.category}</div>
+        <p>${item.trailerHeading}</p>
+    </div>`;
       trailersContainer.innerHTML += element;
     });
 
@@ -218,4 +224,16 @@ export function redirectYoutube(element) {
       window.open(Link, "_blank");
     }
   }
+}
+
+export function fadeHome(){
+  gsap.to(".home",{
+    opacity:0,
+    duration:2,
+    onComplete:()=>{
+      gsap.set(".home",{
+        display:"none"
+      })
+    }
+  })
 }

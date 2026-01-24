@@ -1,6 +1,6 @@
 console.log("seasons.js loaded");
 
-function createRatingsTable() {
+export function createRatingsTable() {
     const tableContainer = document.querySelector(".ratingTable"); //
 
     let tableHTML = ` <h1 id="ratings">Ratings by episodes..</h1>
@@ -46,7 +46,7 @@ function createRatingsTable() {
 }
 
 
- async function loadSeasons(index) {
+export async function loadEpisodes(index) {
     const seasonContainer = document.querySelector(".seasonsContainer")
     const currentHeight = seasonContainer.offsetHeight;
     seasonContainer.style.height = `${currentHeight}px`;
@@ -58,20 +58,85 @@ function createRatingsTable() {
     posterDiv.innerHTML = ` <img src="${seasonData.poster_url}" alt="${seasonData.season}">
     <p>StrangerThings(${seasonData.season})</p>`
     let episodesHtml = seasonData.episodes.map(episode => {
-        return `<div class="episodes">
+       return `
+    <div class="episodes">
         <h1>${episode.no}</h1>
-        <img src="${episode.image_url}" alt="${episode.title}">
-        <div class="episodeDescription">
-        <a href="${episode.link}" target="_blank" style="text-decoration: none; color: inherit;">
-        <h3>${episode.title}</h3>
-        </a>
-        <p>${episode.description}</p>
+        <div class="media-container">
+            <img src="${episode.image_url}" alt="${episode.title}">
+            <div class="hover-overlay">
+                <img src="./assests/images/contents/play-circle-svgrepo-com.svg" class="overlay-icon">
+            </div>
         </div>
-        </div>`
+        <div class="episodeDescription">
+            <a href="${episode.link}" target="_blank" style="text-decoration: none; color: inherit;">
+                <h3>${episode.title}</h3>
+            </a>
+            <p>${episode.description}</p>
+        </div>
+    </div>`;
     }).join('');
     seasonContainer.innerHTML = episodesHtml;
     seasonContainer.style.height = 'auto';
 }
 
-createRatingsTable();
-loadSeasons(0)
+export function fadeSeasons() {
+    gsap.to(".seasons", {
+        opacity: 0,
+        duration: 2,
+        onComplete: () => {
+            gsap.set(".seasons", {
+                display: "none"
+            })
+        }
+    })
+}
+
+export function loadSeasonsPage() {
+
+    gsap.set(".seasons", {
+        display: "block"
+    })
+    const tl = gsap.timeline()
+    gsap.set("main", {
+        display: "block"
+    })
+    gsap.set("nav", {
+        display: "flex"
+    })
+    tl.fromTo(
+        "nav",
+        {
+            y: -250,
+            opacity: 0,
+        },
+        {
+            delay: 1,
+            y: 0,
+            opacity: 1,
+            duration: 1.5,
+            ease: "power2.out",
+        }, "<"
+    );
+    tl.fromTo(
+        "main",
+        {
+            y: 50,
+            opacity: 0,
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 2.5,
+            ease: "power2.out",
+        },
+        "<",
+    );
+
+}
+
+
+const selectorsButtons = document.querySelector(".dropdown");
+selectorsButtons.addEventListener("click",event=>{
+    const index = event.target.id;
+    loadEpisodes(index)
+})
