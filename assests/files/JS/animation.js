@@ -136,9 +136,7 @@ export function loadMainPage() {
     gsap.set("main",{
         display:"block"
     })
-    gsap.set(".seasons,.about",{
-        dispaly:"none"
-    })
+    
     gsap.set("nav",{
         display:"flex"
     })
