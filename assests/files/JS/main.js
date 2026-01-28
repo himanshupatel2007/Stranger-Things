@@ -15,7 +15,7 @@ if('scrollRestoration' in history){
 
 window.addEventListener("load",()=>{
     window.scrollTo(0, 0);
-    gasp.set(".loadingScreen,nav,main,.home,.seasons",{
+    gsap.set(".loadingScreen,nav,main,.home,.seasons",{
         display:"none"
     })
 })
